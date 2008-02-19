@@ -1,0 +1,5 @@
+#postscript("figure1.ps")
+pdf("figure1.pdf")
+x <- seq(0,100,1)
+y <- x/100 + 0.2*sin(2*pi*x/30)
+plot(x,y,type='l',xlab="t",ylab=expression(Delta*T))

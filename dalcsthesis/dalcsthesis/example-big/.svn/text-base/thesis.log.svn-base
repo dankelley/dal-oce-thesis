@@ -1,0 +1,335 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2006.7.6)  22 MAR 2007 09:41
+entering extended mode
+**thesis
+(./thesis.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./dalcsthesis.cls
+Document Class: dalcsthesis 2005/02/24 v2.4 Dalhousie University thesis class
+(/opt/local/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2004/02/16 v1.4f Standard LaTeX document class
+(/opt/local/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/opt/local/share/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks14
+\AP@partial=\box26
+\AP@footins=\box27
+)
+\dal@textheight@default=\skip43
+\dal@textheight@footer=\skip44
+\dal@tempdima=\dimen103
+\dal@tempdimb=\dimen104
+ (./glossary.sty
+Package: glossary 2004/11/02 2.12 (NLCT)
+
+(/opt/local/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\gls@cols=\count88
+
+(/opt/local/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip45
+\LTright=\skip46
+\LTpre=\skip47
+\LTpost=\skip48
+\LTchunksize=\count89
+\LTcapwidth=\dimen105
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count90
+\LT@rows=\count91
+\c@LT@tables=\count92
+\c@LT@chunks=\count93
+\LT@p@ftn=\toks16
+)
+\descriptionwidth=\skip49
+\istfile=\write3
+)
+\@glossaryfile=\write4
+\openout4 = `thesis.glo'.
+
+
+Writing glossary file thesis.glo 
+\dal@supervisornum=\count94
+\c@dal@signatures=\count95
+\c@dal@readernum=\count96
+) (./graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+ (/opt/local/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+) (./subfigure.sty
+Package: subfigure 1995/03/06 v2.0 subfigure package
+
+Package: subfigure 1995/03/06 v2.0
+\c@subfigure=\count97
+\c@lofdepth=\count98
+\c@subtable=\count99
+\c@lotdepth=\count100
+) (./algorithmic.sty
+Package: algorithmic 
+
+Document Style `algorithmic' - environment
+(/opt/local/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count101
+\calc@Bcount=\count102
+\calc@Adimen=\dimen108
+\calc@Bdimen=\dimen109
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count103
+)
+\c@ALC@line=\count104
+\c@ALC@rem=\count105
+\ALC@tlm=\skip52
+) (./algorithm.sty
+Package: algorithm 
+
+Document Style `algorithm' - floating environment
+(/opt/local/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks17
+\float@box=\box32
+\@float@everytoks=\toks18
+\@floatcapt=\box33
+)
+\@float@every@algorithm=\toks19
+\c@algorithm=\count107
+) (./nzproof.sty
+Package: nzproof 2004/04/01
+
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen110
+))
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen111
+)
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen112
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip10
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks21
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks22
+\eqnshift@=\dimen113
+\alignsep@=\dimen114
+\tagshift@=\dimen115
+\tagwidth@=\dimen116
+\totwidth@=\dimen117
+\lineht@=\dimen118
+\@envbody=\toks23
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/opt/local/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/opt/local/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)))
+(/opt/local/share/texmf-dist/tex/latex/tools/theorem.sty
+Package: theorem 1995/11/23 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks25
+\theorem@bodyfont=\toks26
+\theorempreskipamount=\skip56
+\theorempostskipamount=\skip57
+
+(/opt/local/share/texmf-dist/tex/latex/tools/thp.sty
+File: thp.sty 1995/11/23 v2.2c Theorem extension package (FMi)
+))
+\c@theorem=\count120
+\c@proposition=\count121
+\c@lemma=\count122
+\c@definition=\count123
+\c@observation=\count124
+\c@corollary=\count125
+\c@problem=\count126
+ (./thesis.aux
+(./A-longProof.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
+Unavoidable over/underfulls may occur in the first
+few pages of dalthesis. These can usually be ignored.
+However, if uncorrectable errors occur, notify staff.
+LaTeX Info: Redefining \\ on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+(/opt/local/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+ [1
+
+\openout3 = `thesis.ist'.
+
+{/opt/local/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Info: Redefining \\ on input line 52.
+LaTeX Info: Redefining \\ on input line 52.
+\c@dal@loopindex=\count127
+ [2
+
+]
+LaTeX Info: Redefining \\ on input line 52.
+ [3
+
+] [4
+
+] (./thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+(/opt/local/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/opt/local/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+))
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [5
+
+
+] (./thesis.lot)
+\tf@lot=\write6
+\openout6 = `thesis.lot'.
+
+
+[6
+
+
+] (./thesis.lof)
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
+
+ [7
+
+
+]
+Dalthesis preface pages completed.
+*** INSIDE CAPTION ***
+*** INSIDE CAPTION ***
+*** INSIDE CAPTION ***
+No file thesis.bbl.
+[1
+
+]
+\openout2 = `A-longProof.aux'.
+
+
+No file A-longProof.tex.
+(./thesis.aux (./A-longProof.aux)) ) 
+Here is how much of TeX's memory you used:
+ 2331 strings out of 94500
+ 27722 string characters out of 1174974
+ 86373 words of memory out of 1000000
+ 5457 multiletter control sequences out of 10000+50000
+ 10552 words of font info for 39 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 34i,7n,28p,497b,249s stack positions out of 1500i,500n,5000p,200000b,5000s
+PDF statistics:
+ 41 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 1 words of extra memory for PDF output out of 65536
+</opt/local/share/texmf-dist/fonts/type1/bl
+uesky/cm/cmbx12.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmti12.
+pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></opt/local/s
+hare/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></opt/local/share/texmf-dist/
+fonts/type1/bluesky/cm/cmr12.pfb>
+Output written on thesis.pdf (8 pages, 42686 bytes).

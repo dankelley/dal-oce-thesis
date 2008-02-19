@@ -1,0 +1,147 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2006.7.6)  22 MAR 2007 09:35
+entering extended mode
+**simple.tex
+(./simple.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./dalcsthesis.cls
+Document Class: dalcsthesis 2005/02/24 v2.4 Dalhousie University thesis class
+(/opt/local/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2004/02/16 v1.4f Standard LaTeX document class
+(/opt/local/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/opt/local/share/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks14
+\AP@partial=\box26
+\AP@footins=\box27
+)
+\dal@textheight@default=\skip43
+\dal@textheight@footer=\skip44
+\dal@tempdima=\dimen103
+\dal@tempdimb=\dimen104
+\dal@supervisornum=\count88
+\c@dal@signatures=\count89
+\c@dal@readernum=\count90
+) (./simple.aux)
+\openout1 = `simple.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+Unavoidable over/underfulls may occur in the first
+few pages of dalthesis. These can usually be ignored.
+However, if uncorrectable errors occur, notify staff.
+LaTeX Info: Redefining \\ on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+(/opt/local/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+ [1
+
+{/opt/local/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Info: Redefining \\ on input line 24.
+LaTeX Info: Redefining \\ on input line 24.
+\c@dal@loopindex=\count91
+ [2
+
+]
+LaTeX Info: Redefining \\ on input line 24.
+ [3
+
+] (./simple.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `simple.toc'.
+
+ [4
+
+
+]
+\ab@page=\count92
+ [5
+
+
+]
+[6
+
+]
+Dalthesis preface pages completed.
+Chapter 1.
+
+LaTeX Warning: Citation `latex-by-lamport' on page 1 undefined on input line 38
+.
+
+
+LaTeX Warning: Citation `latex-companion' on page 1 undefined on input line 39.
+
+
+[1
+
+]
+Chapter 2.
+[2
+
+]
+Chapter 3.
+No file simple.bbl.
+[3
+
+] (./simple.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 507 strings out of 94500
+ 6390 string characters out of 1174974
+ 57097 words of memory out of 1000000
+ 3737 multiletter control sequences out of 10000+50000
+ 7588 words of font info for 27 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 28i,7n,21p,175b,230s stack positions out of 1500i,500n,5000p,200000b,5000s
+PDF statistics:
+ 41 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 1 words of extra memory for PDF output out of 65536
+</opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></opt/local/sh
+are/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></opt/local/share/texmf-dist/fo
+nts/type1/bluesky/cm/cmsy10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesk
+y/cm/cmr12.pfb>
+Output written on simple.pdf (9 pages, 38766 bytes).

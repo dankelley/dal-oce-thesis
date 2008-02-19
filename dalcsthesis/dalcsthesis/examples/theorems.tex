@@ -1,0 +1,88 @@
+% Version 2006-12-05
+\documentclass[12pt]{dalcsthesis}
+
+% Definitions, Theorems, Lemmas, etc.
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+% A simple proof environment
+\newenvironment{proof}{\paragraph{Proof.}}
+{\nopagebreak\hfill\nopagebreak\rule{2mm}{2mm}\par\bigskip}
+
+\begin{document}
+
+\mcs  % options are \mcs, \macs, \mec, \mhi, \phd, and \bcshon
+\title{The title}
+\author{Noah Body}
+\defenceday{1}
+\defencemonth{November}
+\defenceyear{2006}
+\convocation{May}{2007}
+
+% Use multiple \supervisor commands for co-supervisors.
+% Use one \reader command for each reader.
+
+\supervisor{D. Prof}
+\reader{D. Odaprof}
+\reader{A. External}
+
+\nolistoftables
+\nolistoffigures
+
+\frontmatter
+
+\begin{abstract}
+This is a test document.
+\end{abstract}
+
+\begin{acknowledgements}
+Thanks to all the little people who make me look tall.
+\end{acknowledgements}
+
+\mainmatter
+
+\chapter{Introduction}
+
+Get it done!  Use reference material by Lamport~\cite{latex-by-lamport} or
+Gooses, Mittelback, and Samarin~\cite{latex-companion}.
+
+\chapter{Doing It}
+
+\section{Getting Ready}
+
+Get all the parts that I need.  I can throw in a whole pile of terms like
+preparation,
+methodology,
+forethought,
+and
+analysis
+as examples for me to use in the future.
+
+\section{Next Step}
+
+Do it!
+
+Theorem~\ref{theorem-sample} is a sample theorem.
+
+\begin{theorem}[Optional title] \label{theorem-sample}
+    This is a theorem!
+\end{theorem}
+
+\begin{proof}
+    This is the proof.
+
+    Here comes the Q.E.D. (quod erat demonstrandum) box.
+\end{proof}
+
+Of course, you have to have pictures to show how you did it to make people
+understand things better.
+
+\chapter{Conclusion}
+
+Did it!
+
+\bibliographystyle{plain}
+\bibliography{simple}
+
+\end{document}

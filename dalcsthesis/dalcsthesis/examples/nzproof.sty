@@ -1,0 +1,26 @@
+\ProvidesPackage{nzproof}[2004/04/01]
+
+\RequirePackage{amsmath,amssymb,amsfonts,ifthen}
+
+\def\proofname{Proof}
+\def\sketchname{Proof sketch}
+\def\qedsymbol{\RIfM@\bgroup\else$\bgroup\aftergroup$\fi
+  \vcenter{\hrule\hbox{\vrule\@height.6em\kern.6em\vrule}\hrule}\egroup}
+\def\qed{\RIfM@\else\unskip\fi\hskip 0pt plus 1fill\hbox{}\nobreak\hskip 1 em plus 1fill\nobreak
+\qedsymbol}
+\newenvironment{pf}[1][]{%
+\par\topsep6\p@\@plus6\p@
+\trivlist \itemindent 0pt
+\ifthenelse{\equal{#1}{}}%
+{\item[\hskip\labelsep\sl\proofname.]\ignorespaces}%
+{\item[\hskip\labelsep\sl\proofname\ (#1).]\ignorespaces}}%
+{\qed\endtrivlist}
+\newenvironment{ps}[1][]{%
+\par\topsep6\p@\@plus6\p@
+\trivlist \itemindent 0pt
+\ifthenelse{\equal{#1}{}}%
+{\item[\hskip\labelsep\sl\sketchname.]\ignorespaces}%
+{\item[\hskip\labelsep\sl\sketchname\ (#1).]\ignorespaces}}%
+{\qed\endtrivlist}
+
+%%% END OF FILE %%%
