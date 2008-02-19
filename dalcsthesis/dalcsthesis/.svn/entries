@@ -1,0 +1,110 @@
+8
+
+dir
+5
+file:///Users/kelley/subversion/ocethesis/trunk/ocethesis/dalthesis/dalcsthesis
+file:///Users/kelley/subversion/ocethesis
+
+
+
+2007-03-23T14:22:57.415661Z
+1
+kelley
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d0b0ae61-572c-0410-adc1-df3d853fb265
+
+glossary.sty
+file
+
+
+
+
+2007-03-23T14:23:56.000000Z
+8234e82563f3acea27f440956a1e93b3
+2007-03-23T14:22:57.415661Z
+1
+kelley
+
+dalcsthesis.cls
+file
+
+
+
+
+2007-03-23T14:23:56.000000Z
+d2fc5cb9e9c31e0fa926e60963fe22a5
+2007-03-23T14:22:57.415661Z
+1
+kelley
+
+dalthesis.pdf
+file
+
+
+
+
+2007-03-23T14:23:57.000000Z
+7d65dc5151ca76f82b85a3d9c711e7ac
+2007-03-23T14:22:57.415661Z
+1
+kelley
+has-props
+
+simple
+dir
+
+example-big
+dir
+
+index.html
+file
+
+
+
+
+2007-03-23T14:23:57.000000Z
+1aca7d871a9d80460bd7f715b8bcc87e
+2007-03-23T14:22:57.415661Z
+1
+kelley
+
+styles.css
+file
+
+
+
+
+2007-03-23T14:23:57.000000Z
+f30558a55d9286179953264b125e5349
+2007-03-23T14:22:57.415661Z
+1
+kelley
+
+afterpage.sty
+file
+
+
+
+
+2007-03-23T14:23:57.000000Z
+95f3b7191c81616e83626f7fc4d3497e
+2007-03-23T14:22:57.415661Z
+1
+kelley
+
+examples
+dir
+

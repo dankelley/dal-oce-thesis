@@ -1,0 +1,13 @@
+@book{latex-by-lamport,
+ author =      "Leslie Lamport",
+ title =       "A Document Preparation System {Latex} User's Guide and Reference Manual",
+ publisher =   "Addison-Wesley",
+ year =        1986
+}
+
+@book{latex-companion,
+ author =      "Michel Goossens and Frank Mittelbach and Alexander Samarin",
+ title =       "The {LaTeX} Companion",
+ publisher =   "Addison-Wesley",
+ year =        1994
+}

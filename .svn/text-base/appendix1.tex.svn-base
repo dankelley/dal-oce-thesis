@@ -1,0 +1,26 @@
+\appendix
+\chapter*{\label{a:hints}Appendix A: Hints}
+\addcontentsline{toc}{chapter}{Appendix A: Hints}
+
+\begin{itemize}
+
+
+	\item Learn about running latex and bibtex -- how many times, and in what order!
+
+ \item Examine the .tex file to see how things are done. Note that it's convenient to use the "include{}"
+syntax for chapters, so you can check formatting quickly, without processing the entire thesis.
+
+	\item It's a good idea to establish a convention for referencing items, e.g. perhaps "e:..." for
+equations, "f:..." for figures, "t:..." for tables, "c:..." for chapters.
+
+
+	\item Be sure to put the "label" commands inside figure captions. Otherwise (sometimes) cross-referencing will be mixed up.
+	
+	\item Note the short-form figure caption, which appears in the list of figures.  (Do this work early because it's a pain later!)
+	
+	\item If you're finding weird cross-referencing results, clean out your .aux and similar files and start over.
+
+ 	\item Graphics can be tricky. Do some tests early on, so you'll learn whether your LaTeX setup
+    handles the graphs you make. 
+
+\end{itemize}

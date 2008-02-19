@@ -1,0 +1,31 @@
+%\addcontentsline{toc}{chapter}{List of Symbols}
+%\markboth{Symbols}{List of Symbols}
+
+
+	\setlongtables
+	\begin{longtable}{cll}
+	\hline
+	Roman symbol & Description & Units\\
+	\hline
+	\endhead
+	\hline
+	\endfoot
+	$T$ & Temperature & $^\circ$C\\
+\hline
+\end{longtable}
+
+% \newpage
+	\setlongtables
+\begin{longtable}{cll}
+\hline
+Greek symbol & Description & Units\\
+\hline
+\endhead
+\hline
+\endfoot
+$\alpha$ & thermal expansion coefficient & $^\circ\textrm{C}^{-1}$\\
+$\rho$ & density of water & kg\,m$^{-3}$\\
+\hline
+\end{longtable}
+
+

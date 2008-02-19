@@ -1,0 +1,49 @@
+\documentclass[12pt]{ocethesis}
+%\usepackage[dvips]{epsfig}
+\usepackage{graphicx}
+\usepackage{ocethesisbib} % file provided with this package
+\usepackage{times} % I find the fonts nicer this way ... some PDF viewers do, too
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{rotating} % for rotated figures
+\usepackage{subfigure} 
+\usepackage{setspace} % for single-spacing of abstract
+
+\usepackage{layout}
+\begin{document}
+\msc % or \phd
+\title{(Insert thesis title Here)}
+\author{(Insert author name here)}
+\supervisor{(Insert supervisor name here)}
+\examiner{(Insert external examiner's name here)}
+\firstreader{(Insert first reader's name here)}
+\secondreader{(Insert second reader's name here)}
+\thirdreader{(Insert third reader's name here)}
+\fourthreader{(Insert fourth reader's name here)}
+\examiner{(Insert examiner's name here)}
+\university{Dalhousie University}
+\dept{(Insert department name here)}
+
+\defenceday{1}
+\defencemonth{November}
+\defenceyear{2007}
+\convocation{May}{2007}
+
+\frontmatter
+\dedicate{(Insert dedication here)}
+\input{abstract}
+\input{symbols}
+%\printglossary
+\input{acknowledgment}
+
+\mainmatter
+\layout
+\include{chapter1}
+% ...include other chapters here...
+\include{appendix1}
+% ...include other appendices here...
+\bibliographystyle{ocethesis}
+\bibliography{literature} % file called literature.bib in present directory
+
+\end{document}

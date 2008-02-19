@@ -1,0 +1,31 @@
+@Article{Voss:2001,
+  author = 	 {R. Voss and U. Mikolajewicz},
+  title = 	 {Long-term climate changes due to increased CO$_2$ concentration in the coupled atmosphere-ocean general circulation model {E}{C}{H}{A}{M}3/{L}{S}{G}},
+  journal = 	 {Climate Dynamics},
+  year = 	 {2001},
+  OPTkey = 	 {},
+  volume = 	 {17},
+  OPTnumber = 	 {},
+  pages = 	 {45-60},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@article{Baines:1973,
+ author = "P. G. Baines",
+ title = "The generation of internal tides by flat-bump topography",
+ year = 1973,
+ journal = {Deep-Sea Res.},
+ volume = 20,
+ pages = "179--205",
+ keywords = "internal tides"}
+
+@article{Baines:1982,
+ author = "P. G. Baines",
+ title = "On internal tide generation models",
+ year = 1982,
+ journal = {Deep-Sea Res.},
+ volume = 29,
+ pages = "307--338",
+ keywords = "internal tides"}

@@ -1,0 +1,10 @@
+% makeindex style file created by LaTeX for document "thesis" on 2007-3-22
+keyword "\\glossaryentry"
+preamble "\\begin{theglossary}"
+postamble "\n\\end{theglossary}\n"
+group_skip "\\gloskip "
+item_0 "\n\\gloitem "
+delim_0 "\n\\glodelim "
+page_compositor "-"
+delim_n "\\delimN "
+delim_r "\\delimR "

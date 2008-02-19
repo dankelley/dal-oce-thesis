@@ -1,0 +1,129 @@
+% This is bigger example of how to use the Dalhousie CS Thesis style.
+\documentclass[12pt,glossary]{dalcsthesis}
+
+%Figures
+\usepackage[dvips]{graphicx}
+\usepackage{subfigure}
+
+
+% Algorithms
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+%Theorem
+\usepackage{nzproof,theorem}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{observation}{Observation}
+\newtheorem{corollary}{Corollary}
+\newtheorem{problem}{Problem}
+
+\begin{document}
+
+\mcs  % options are \mcs, \macs, \mec, \mhi, \phd, and \bcshon
+\title{How to Write Theses\\
+       With Two Line Titles}
+\author{I. Bee. Graduate}
+
+\defenceday{1}
+\defencemonth{November}
+\defenceyear{2006}
+\convocation{May}{2007}
+
+
+% Use multiple \supervisor commands for co-supervisors.
+% Use one \reader command for each reader.
+
+\supervisor{Professor Joe Blogs}
+\reader{Professor Peter Zappa}
+%\reader{Professor General Reference}
+\dedicate{To Dalhousie,\\\vspace{12pt}
+a great place,\\\vspace{12pt}
+to write a long thesis in LaTeX.}
+
+% These next lines can be deleted as you want the appropriate list in
+% your thesis
+
+%\nolistoftables
+%\nolistoffigures
+
+\frontmatter
+
+% \begin{abstract}
+% \input{abstract.tex}
+% \end{abstract}
+% 
+% \printglossary
+% 
+% \begin{acknowledgements}
+% \input{acknowledgements.tex}
+% \end{acknowledgements}
+
+\mainmatter
+
+% \include{1-introduction}
+% \include{2-doingTheFigures}
+% \include{3-dancingWithTables}
+% \include{4-algorithms}
+% \include{5-proofs}
+% \include{6-compile}
+
+\begin{figure}[htbp]
+	\begin{center}
+		FIGURE HERE
+	\end{center}
+	\caption[Normalized temperature rise in heated soup]{
+	\label{f:wigglyline}
+	Oh Alabama./
+	Can I see you /
+	and shake your hand. /
+	Make friends down in Alabama. /
+	I'm from a new land /
+	I come to you /
+	and see all this ruin /
+	What are you doing Alabama? /
+	You got the rest of the union /
+	to help you along /
+	What's going wrong?  (\emph{Neil Young})}
+\end{figure}
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+      Soup  & Impression\\
+      \hline
+      Pea  & yummy in my tummy\\
+      Carrot & not to my taste\\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption[Food for thought]{\label{t:soup}  Rows and flows of angel hair /and ice cream castles in the air / and feather canyons everywhere / I've looked at clouds that way. (\emph{Joni Mitchell})}
+\end{table}
+
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+      Soup  & Impression\\
+      \hline
+      Pea  & yummy in my tummy\\
+      Carrot & not to my taste\\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption[Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought Food for thought ]{\label{ta:soup}  Rows and flows of angel hair /and ice cream castles in the air / and feather canyons everywhere / I've looked at clouds that way. (\emph{Joni Mitchell})}
+\end{table}
+
+
+\bibliographystyle{plain}
+\bibliography{thesisExample}
+
+\appendix
+
+\include{A-longProof}
+
+\end{document}
