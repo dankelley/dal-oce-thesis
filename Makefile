@@ -23,7 +23,7 @@ dist:
 	rm -rf $(ZIP)
 web:
 	make dist
-	rsync -avzC -e ssh $(ZIP).zip patch* style.css index.php /Users/kelley/Sites/graduatecoordinator/ocethesis
+	rsync -avzC -e ssh $(ZIP).zip patch* style.css ocethesis.php /Users/kelley/Sites/graduatecoordinator/ocethesis
 	chmod og-r /Users/kelley/Sites/ocethesis/*
 	sudo chmod +a "www allow read" /Users/kelley/Sites/ocethesis/*
 
