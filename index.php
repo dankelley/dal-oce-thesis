@@ -86,6 +86,13 @@ A)</tt> instead of <tt>(see appendix~\ref{appendix-name})</tt>
 
 <ul>
 
+<li>Version <span class="filename">0.4</span> is
+as <span class="filename">0.3</span> except that
+the <span class="filename">appendix</span> package is used to get
+correct cross-referencing.  Note that it seems that this must be
+high up in the inclusion list, so it is put at the top in the
+ example file.
+
 <li>Version <span class="filename">0.3</span> is as <span
 class="filename">0.2</span> except that the margin spacing is more
 correct. (A unix diff patch to <span
