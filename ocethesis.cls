@@ -1008,7 +1008,6 @@
 \let\acknowledgments\acknowledgements
 \let\endacknowledgments\endacknowledgements
 \renewcommand{\contentsname}{Table of Contents}
-\newcommand{\symheadingname}{DEK list of symbols}
 \def\frontmatter{%
    \typeout{Unavoidable over/underfulls may occur in the first^^J%
             few pages of dalthesis. These can usually be ignored.^^J%
