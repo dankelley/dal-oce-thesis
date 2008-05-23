@@ -141,10 +141,10 @@
 \setlength{\headsep}{\baselineskip}
 \setlength{\footskip}{0.5in}
 \setlength{\topmargin}{-1.0cm} % CHECKME
-\setlength{\oddsidemargin}{0.5in}
+\setlength{\oddsidemargin}{0.55in} % the extra 0.05 is to avoid hassles with printers 
 \setlength{\evensidemargin}{0in}
 \setlength{\textwidth}{\paperwidth}
-\addtolength{\textwidth}{-2.5in}
+\addtolength{\textwidth}{-2.60in} % the extra 2*0.05 is to avoid hassles with printers 
 \newlength{\dal@textheight@default}
 \setlength{\dal@textheight@default}{\paperheight}
 \addtolength{\dal@textheight@default}{-2.1in} % FIXME was -1.6in
@@ -1008,6 +1008,7 @@
 \let\acknowledgments\acknowledgements
 \let\endacknowledgments\endacknowledgements
 \renewcommand{\contentsname}{Table of Contents}
+\newcommand{\symheadingname}{DEK list of symbols}
 \def\frontmatter{%
    \typeout{Unavoidable over/underfulls may occur in the first^^J%
             few pages of dalthesis. These can usually be ignored.^^J%
