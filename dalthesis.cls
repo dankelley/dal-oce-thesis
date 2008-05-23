@@ -77,10 +77,10 @@
 \RequirePackage{afterpage}
 \setlength{\headsep}{\baselineskip}
 \setlength{\topmargin}{0pt}
-\setlength{\oddsidemargin}{0.55in} % the extra 0.05 is to avoid hassles with printers
+\setlength{\oddsidemargin}{0.5in}
 \setlength{\evensidemargin}{0in}
 \setlength{\textwidth}{\paperwidth}
-\addtolength{\textwidth}{-2.55in} % the extra 0.05 is to avoid hassles with printers
+\addtolength{\textwidth}{-2.5in}
 \newlength{\dal@textheight@default}
 \setlength{\dal@textheight@default}{\paperheight}
 \addtolength{\dal@textheight@default}{-2in}
