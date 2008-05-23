@@ -21,11 +21,7 @@ dist:
 	cp $(FILES) $(ZIP)
 	zip -r $(ZIP).zip $(ZIP)
 	rm -rf $(ZIP)
-web:
-	make dist
-	rsync -avzC -e ssh $(ZIP).zip patch* style.css ocethesis.php /Users/kelley/Sites/graduatecoordinator/ocethesis
-	chmod og-r /Users/kelley/Sites/ocethesis/*
-	sudo chmod +a "www allow read" /Users/kelley/Sites/ocethesis/*
+	echo "Please do     cp $(ZIP).zip ../GCocean-web/ocethesis"
 
 clean:
 	-rm *.aux $(DOC).lot $(DOC).lof $(DOC).toc $(DOC).dvi $(DOC).blg $(DOC).bbl *.log $(DOC).out $(DOC).ist $(DOC).glo
