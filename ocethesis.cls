@@ -1,9 +1,15 @@
 %% Dalhousie University Oceanography Thesis Document Class
-%% 2007-03
+%% 2008-07
 %% by Dan Kelley.  (Really, this is just a small perturbation of
 %%  the file whose history is indicated in the following comments.)
 %%
 %% Dalhousie University Computer Science Thesis Document Class
+%%
+%% Version 2.8 <2008/07/16>
+%% By Dan Kelley
+%% Changes from version 2.7:
+%%     - Let MSc have an external examiner
+%%
 %% Version 2.7 <2006/12/05>
 %% By Vlado Keselj
 %% Changes from version 2.6:
@@ -96,9 +102,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.4}
-\def\filedate{2005/02/24}
-\def\docdate{2005/02/24}
+\def\fileversion{2.8}
+\def\filedate{2008/07/16}
+\def\docdate{2008/07/16}
 
 
 \NeedsTeXFormat{LaTeX2e}
@@ -120,6 +126,7 @@
 \newif\ifdal@fourth@reader     \dal@fourth@readerfalse
 \newif\ifdal@fifth@reader      \dal@fifth@readerfalse
 \newif\ifdal@phd               \dal@phdfalse
+\newif\ifdal@have@examiner     \dal@have@examinerfalse % let MSc have an optional examiner
 \newif\ifdal@two@supervisors   \dal@two@supervisorsfalse
 \newif\ifdal@draft@mode        \dal@draft@modefalse
 \newif\ifdal@print@bib         \dal@print@bibtrue
@@ -462,7 +469,7 @@
    \gdef\@fifthreader{#1}\dal@fifth@readertrue%
    \addtocounter{dal@readernum}{1}%
 }
-\def\examiner#1{\gdef\@examiner{#1}}
+\def\examiner#1{\gdef\@examiner{#1}\dal@have@examinertrue}
 \def\twosupervisors{\dal@two@supervisorstrue}
 \def\dal@CheckForTwoSupervisors{%
    \ifdal@two@supervisors
@@ -723,6 +730,9 @@
       \fi
       \signature{Examining Committee:}{\@firstreader}
    \else % not Ph.D. degree:
+      \ifdal@have@examiner % Some departments use examiners
+          \signature{External Examiner:}{\@examiner}
+      \fi
       \ifdal@two@supervisors
          \signature{Supervisors:}{\@supervisor}
          \signature{}{\@cosupervisor}
