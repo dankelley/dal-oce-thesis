@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>LaTeX style file for Oceanography theses</h1>
-<p><i>Dan Kelley 2007-04-18</i></p>
+<p><i>Dan Kelley 2007-08-13</i></p>
 
 <h1>Background</h1> 
 
@@ -85,6 +85,10 @@ A)</tt> instead of <tt>(see appendix~\ref{appendix-name})</tt>
 <h1>Changes from previous versions</h1>
 
 <ul>
+
+<li>Version <span class="filename">0.5</span> is as <span
+class="filename">0.4</span> except that a conflict with the gensymb
+package has been resolved, and the dedication now works properly.q
 
 <li>Version <span class="filename">0.4</span> is
 as <span class="filename">0.3</span> except that

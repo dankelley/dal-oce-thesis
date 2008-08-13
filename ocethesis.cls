@@ -1,9 +1,15 @@
 %% Dalhousie University Oceanography Thesis Document Class
-%% 2008-07
+%% 2008-08-13
 %% by Dan Kelley.  (Really, this is just a small perturbation of
 %%  the file whose history is indicated in the following comments.)
 %%
 %% Dalhousie University Computer Science Thesis Document Class
+%%
+%% Version 2.9 <2008/08/13>
+%% By Dan Kelley
+%% Changes from version 2.8:
+%%     - Prevent conflict with the gensymb package
+%%     - Ensure that the dedication works
 %%
 %% Version 2.8 <2008/07/16>
 %% By Dan Kelley
@@ -102,10 +108,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.8}
-\def\filedate{2008/07/16}
-\def\docdate{2008/07/16}
-
+\def\fileversion{2.9}
+\def\filedate{2008/08/13}
+\def\docdate{2008/08/13}
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -498,7 +503,7 @@
 }
 \def\submitdate#1{\gdef\@submitdate{#1}}
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}}
-\def\degree#1{\gdef\@degree{#1}}
+\def\degreeprogram#1{\gdef\@degreeprogram{#1}}
 \def\degreeinitial#1{\gdef\@degreeinitial{#1}}
 \def\degreesignatures#1{\setcounter{dal@signatures}{#1}}
 
@@ -509,19 +514,19 @@
 \def\@dept{Faculty of Computer Science}
 \def\@faculty{Graduate Studies}
 
-\def\bcshon{\gdef\@faculty{Computer Science}\degree{Bachelor of Computer Science, Honours}\degreeinitial{B.C.Sc.~(Honours)}\degreesignatures{2}}
-\def\bcshoncoop{\gdef\@faculty{Computer Science}\degree{Bachelor of Computer Science, Honours Co-op}\degreeinitial{B.C.Sc.~(Honours, Co-op)}\degreesignatures{2}}
-\def\bschon{\gdef\@faculty{Science}\degree{Bachelor of Science, Honours}\degreeinitial{B.Sc.~(Hon)}\degreesignatures{2}}
+\def\bcshon{\gdef\@faculty{Computer Science}\degreeprogram{Bachelor of Computer Science, Honours}\degreeinitial{B.C.Sc.~(Honours)}\degreesignatures{2}}
+\def\bcshoncoop{\gdef\@faculty{Computer Science}\degreeprogram{Bachelor of Computer Science, Honours Co-op}\degreeinitial{B.C.Sc.~(Honours, Co-op)}\degreesignatures{2}}
+\def\bschon{\gdef\@faculty{Science}\degreeprogram{Bachelor of Science, Honours}\degreeinitial{B.Sc.~(Hon)}\degreesignatures{2}}
 
-\def\mcs{\degree{Master of Computer Science}\degreeinitial{M.C.Sc.}\degreesignatures{3}}
-\def\macs{\degree{Master of Applied Computer Science}\degreeinitial{M.A.C.Sc.}\degreesignatures{2}}
-\def\mec{\degree{Master of Electronic Commerce}\degreeinitial{M.E.C.}\degreesignatures{3}}
-\def\mhi{\degree{Master of Health Informatics}\degreeinitial{M.H.I.}\degreesignatures{3}}
-\def\masc{\degree{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
-\def\msc{\degree{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
-\def\ma{\degree{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
+\def\mcs{\degreeprogram{Master of Computer Science}\degreeinitial{M.C.Sc.}\degreesignatures{3}}
+\def\macs{\degreeprogram{Master of Applied Computer Science}\degreeinitial{M.A.C.Sc.}\degreesignatures{2}}
+\def\mec{\degreeprogram{Master of Electronic Commerce}\degreeinitial{M.E.C.}\degreesignatures{3}}
+\def\mhi{\degreeprogram{Master of Health Informatics}\degreeinitial{M.H.I.}\degreesignatures{3}}
+\def\masc{\degreeprogram{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
+\def\msc{\degreeprogram{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
+\def\ma{\degreeprogram{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
 
-\def\phd{\degree{Doctor of Philosophy}\degreeinitial{Ph.D.}\dal@phdtrue\degreesignatures{5}}
+\def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{Ph.D.}\dal@phdtrue\degreesignatures{5}}
 
 \def\@supervisor{}\def\@firstreader{}\def\@secondreader{}
 \def\@thirdreader{}\def\@fourthreader{}\def\@fifthreader{}
@@ -607,7 +612,7 @@
    \begin{center}
       \linespread{1}\normalsize % Switch to single-spacing
       Submitted in partial fulfillment of the requirements \\
-      for the degree of \@degree\\
+      for the degree of \@degreeprogram\\
       [2.5ex] at \\[2.5ex]
       \@university \\
       \@address \\
@@ -645,7 +650,7 @@
       Submitted in partial fulfillment of the \\
       requirements for the degree of \\
       \vskip 2.5ex
-      \MakeUppercaseWithNewline{\@degree} \\
+      \MakeUppercaseWithNewline{\@degreeprogram} \\
       \vskip 2.5ex
       Major Subject: \@dept \\
       \vskip 2.5ex
@@ -702,7 +707,7 @@
       \linebreak[3] ``{\no@breaks{\MakeUppercase{\@title}}}''
       \linebreak[3] by \mbox{\@author} in partial
       fulfillment of the requirements for the degree of
-      \linebreak[2] \mbox{\@degree}. \\
+      \linebreak[2] \mbox{\@degreeprogram}. \\
    \end{sloppypar}
    \vskip0.2in plus 1fill minus 0.1in
    \begin{flushright}
@@ -806,7 +811,7 @@
       \linebreak[3] ``{\bfseries \no@breaks{\titleCased{\@title}}}''
       \linebreak[3] by \mbox{\bfseries\@author} in partial
       fulfillment of the requirements for the degree of
-      \linebreak[2] \mbox{\bfseries\@degree}. \\
+      \linebreak[2] \mbox{\bfseries\@degreeprogram}. \\
    \end{sloppypar}
    \vskip0.2in plus 1fill minus 0.1in
    \begin{flushright}
@@ -943,7 +948,7 @@
          \item[\bfseries AUTHOR:      \hfill] {\@author}
          \item[\bfseries TITLE:       \hfill] {\no@breaks{\titleCased{\@title}}}
          \item[\bfseries MAJOR SUBJECT:]      {\no@breaks{\@dept}}
-         \item[\bfseries DEGREE:      \hfill] {\no@breaks{\@degree}}
+         \item[\bfseries DEGREE:      \hfill] {\no@breaks{\@degreeprogram}}
          \item[\bfseries CONVOCATION: \hfill] {\@convocationmonth,
             \@convocationyear}
       \end{list}
