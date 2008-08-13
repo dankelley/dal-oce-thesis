@@ -1,19 +1,20 @@
 \documentclass[12pt]{ocethesis}
-\usepackage{appendix} % otherwise cross references may fail on some machines
-%\usepackage[dvips]{epsfig}
+% Required packages
+\usepackage{ocethesisbib}       % For bibliography
+\usepackage{appendix}           % Otherwise cross references may fail
+\usepackage{setspace}           % For single-spacing of abstract
 \usepackage{graphicx}
-\usepackage{ocethesisbib} % file provided with this package
-\usepackage{times} % I find the fonts nicer this way ... some PDF viewers do, too
-\usepackage{color}
-\usepackage{amsmath}
-\usepackage{longtable}
-\usepackage{rotating} % for rotated figures
-\usepackage{subfigure} 
-\usepackage{setspace} % for single-spacing of abstract
+% Highly recommended packages
+\usepackage{times}              % Improve font over the default
+% Recommended packages
+\usepackage{amsmath}            % Has more symbols
+\usepackage{color}              % In case you use coloured text
+\usepackage{longtable}          % Use this to get long tables
+\usepackage{rotating}           % Use this if you have rotated figures
+\usepackage{subfigure}          % Use this if you want sub-figures
+\usepackage{microtype}          % Subtly improves word spacing
 
-%\usepackage{layout}
-
-\parindent=1em
+\parindent=1em                  % Set any value you like
 
 \begin{document}
 
@@ -45,7 +46,7 @@
 \input{acknowledgment}
 
 \mainmatter
-%\layout
+
 \include{chapter1}
 % ...include other chapters here...
 \include{appendix1}
