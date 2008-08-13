@@ -1,4 +1,4 @@
-<?php $version="0.3";?>
+<?php $version="0.5";?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head><title>LaTeX style file for Oceanography theses</title>
@@ -88,7 +88,7 @@ A)</tt> instead of <tt>(see appendix~\ref{appendix-name})</tt>
 
 <li>Version <span class="filename">0.5</span> is as <span
 class="filename">0.4</span> except that a conflict with the gensymb
-package has been resolved, and the dedication now works properly.q
+package has been resolved, and the dedication now works properly.
 
 <li>Version <span class="filename">0.4</span> is
 as <span class="filename">0.3</span> except that
@@ -128,10 +128,14 @@ list of figures.  In LaTeX, the material for the list of figures is
 given in square brackets, prior to the curly-bracketed caption.  You
 can save yourself a lot of time by getting this right at the start.
 Note that the sentences that appear in the list of figures should be
-short and simple.  (Some writers use non-sentences, e.g. they might
-write <tt>\caption[Sampling array.]{Sampling array.  Top panel: plan
-view of sampling array, with instrument types as listed in the legend.
-Bottom panel: diagram of an individual instrument.}</tt>
+short and simple.  Some writers use non-sentences, e.g. they might
+write as follows
+<pre>
+\caption[Sampling array.]{Sampling array. Top panel: plan
+  view of sampling array, with instrument types as listed in the legend.
+  Bottom panel: diagram of an individual instrument.
+}
+</pre>
 
 </ul>
 
