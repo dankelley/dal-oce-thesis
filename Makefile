@@ -9,7 +9,7 @@ all: FORCE
 	$(LATEX) $(DOC)
 FORCE:
 
-VERSION=0.5
+VERSION=0.6
 LIB=ocethesis.cls ocethesis.bst ocethesisbib.sty Makefile README.txt README.pdf
 EXAMPLE=$(DOC).tex chapter1.tex appendix1.tex abstract.tex acknowledgment.tex literature.bib symbols.tex figure1.pdf figure1.ps
 FILES=$(LIB) $(EXAMPLE)
