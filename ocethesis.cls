@@ -523,10 +523,10 @@
 \def\mec{\degreeprogram{Master of Electronic Commerce}\degreeinitial{M.E.C.}\degreesignatures{3}}
 \def\mhi{\degreeprogram{Master of Health Informatics}\degreeinitial{M.H.I.}\degreesignatures{3}}
 \def\masc{\degreeprogram{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
-\def\msc{\degreeprogram{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
+\def\msc{\degreeprogram{Master of Science}\degreeinitial{MSc}\degreesignatures{3}}
 \def\ma{\degreeprogram{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
 
-\def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{Ph.D.}\dal@phdtrue\degreesignatures{5}}
+\def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{PhD}\dal@phdtrue\degreesignatures{5}}
 
 \def\@supervisor{}\def\@firstreader{}\def\@secondreader{}
 \def\@thirdreader{}\def\@fourthreader{}\def\@fifthreader{}
