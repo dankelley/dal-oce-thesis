@@ -1,7 +1,7 @@
 # LaTeX style file for Oceanography theses
 **Dan Kelley <Dan.Kelley@Dal.Ca>**
 
-**2007-05-23**
+**2007-05-23, 2009-03-19**
 
 ## Background
 
@@ -69,3 +69,11 @@ slight displacements in different printers.
 *Hello* section of **mythesis.tex**, fail on my (OS X system), but
 seem to work on PC systems.
 
+2. As of March 2009, FGS requested that entries in the table of
+contents be in an upper-case font.  However, they relaxed this
+requirement after I explained that I had worked for a morning trying
+to do this, with no luck, and that our department had submitted dozens
+of theses in the format provided by this package.  (In case they make
+the request again, a hint: the tocloft package should be able to
+handle this, but it seems not to, at least in my trials.  There is an
+issue of where to put the usepackage command, I think.)
