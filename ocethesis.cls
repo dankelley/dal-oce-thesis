@@ -207,7 +207,8 @@
       \refstepcounter{chapter}%
       \typeout{\@chapapp\space\thechapter.}%
       \addcontentsline{toc}{chapter}%
-         {\protect\numberline{\@chapapp\space\thechapter}#1}%
+         {\protect\numberline{\@chapapp\space\thechapter}{#1}}%
+%         {\protect\numberline{\sc \@chapapp\space\thechapter}{\sc #1}}%
    \else
       \addcontentsline{toc}{chapter}{#1}%
    \fi
@@ -1162,4 +1163,4 @@
 \setlength{\parskip}{0.2ex plus 0.1ex minus 0.1ex}
 
 %%
-%% End of file `dalthesis.cls'.
+%% End of file `ocethesis.cls'.
