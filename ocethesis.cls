@@ -1,9 +1,21 @@
 %% Dalhousie University Oceanography Thesis Document Class
-%% 2008-08-13
+%% 2009-03-19
 %% by Dan Kelley.  (Really, this is just a small perturbation of
 %%  the file whose history is indicated in the following comments.)
 %%
 %% Dalhousie University Computer Science Thesis Document Class
+%%
+%% Version 2.10 <2009/03/19>
+%% By Dan Kelley
+%%     - it has ``MSc'' instead of ``M.Sc.''
+%%     - it alters the spacing before and after sections, and between
+%%       paragraphs, to make for less white-space.  (Basically, I am
+%%        controlling Tex's ability to stretch these spaces.)
+%%     - it makes the TOC show sections down to e.g. the 2.1.2.1 level
+%%
+%% Changes from version 2.9:
+%%     - Prevent conflict with the gensymb package
+%%     - Ensure that the dedication works
 %%
 %% Version 2.9 <2008/08/13>
 %% By Dan Kelley
@@ -108,9 +120,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.9}
-\def\filedate{2008/08/13}
-\def\docdate{2008/08/13}
+\def\fileversion{2.10}
+\def\filedate{2009/03/19}
+\def\docdate{2009/03/19}
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -299,18 +311,19 @@
 % END -- edit chapter headings
 
 % BEGIN -- edit section headings 
-\setcounter{secnumdepth}{4}                          % or 5???
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
-   {-3.5ex \@plus -1ex \@minus -.2ex}%
-   {2.3ex \@plus.2ex}%
+   {-3.5ex \@plus -1ex \@minus -2ex}%
+   {2.3ex \@plus 0.5ex \@minus 0.5ex}%
    {\normalfont\large\bfseries}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-   {-3.25ex\@plus -1ex \@minus -.2ex}%
-   {1.5ex \@plus .2ex}%
+   {-3.25ex\@plus -1ex \@minus -2ex}%
+   {1.5ex \@plus .5ex \@minus 0.5ex}%
    {\normalfont\large\itshape}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-   {-3.25ex\@plus -1ex \@minus -.2ex}%
-   {1.5ex \@plus .2ex}%
+   {-3.25ex\@plus -1ex \@minus -2ex}%
+   {1.5ex \@plus .5ex \@minus 0.5ex}%
    {\normalfont\slshape}}
 % END -- edit section headings 
 \long\def\@caption#1[#2]#3{%
@@ -1146,6 +1159,7 @@
    {\typeout{Local config file dalthesis.cfg used.}}{}
 \endinput
 
+\setlength{\parskip}{0.2ex plus 0.1ex minus 0.1ex}
 
 %%
 %% End of file `dalthesis.cls'.
