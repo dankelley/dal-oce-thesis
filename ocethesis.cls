@@ -1,21 +1,17 @@
 %% Dalhousie University Oceanography Thesis Document Class
-%% 2009-03-19
+%% 2010-01-04
 %% by Dan Kelley.  (Really, this is just a small perturbation of
 %%  the file whose history is indicated in the following comments.)
 %%
 %% Dalhousie University Computer Science Thesis Document Class
 %%
-%% Version 2.10 <2009/03/19>
+%% Version 2.10 <2010/01/04>
 %% By Dan Kelley
-%%     - it has ``MSc'' instead of ``M.Sc.''
-%%     - it alters the spacing before and after sections, and between
-%%       paragraphs, to make for less white-space.  (Basically, I am
-%%        controlling Tex's ability to stretch these spaces.)
-%%     - it makes the TOC show sections down to e.g. the 2.1.2.1 level
-%%
 %% Changes from version 2.9:
-%%     - Prevent conflict with the gensymb package
-%%     - Ensure that the dedication works
+%%     - change spacing before and after all types of sections,
+%%       with the intention of decreasing large gaps that 
+%%       tended to occur in documents containing large 
+%%       unbreakable items such as figures.
 %%
 %% Version 2.9 <2008/08/13>
 %% By Dan Kelley
@@ -120,9 +116,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.10}
-\def\filedate{2009/03/19}
-\def\docdate{2009/03/19}
+\def\fileversion{2.9}
+\def\filedate{2008/08/13}
+\def\docdate{2008/08/13}
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -207,8 +203,7 @@
       \refstepcounter{chapter}%
       \typeout{\@chapapp\space\thechapter.}%
       \addcontentsline{toc}{chapter}%
-         {\protect\numberline{\@chapapp\space\thechapter}{#1}}%
-%         {\protect\numberline{\sc \@chapapp\space\thechapter}{\sc #1}}%
+         {\protect\numberline{\@chapapp\space\thechapter}#1}%
    \else
       \addcontentsline{toc}{chapter}{#1}%
    \fi
@@ -313,18 +308,18 @@
 
 % BEGIN -- edit section headings 
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
-   {-3.5ex \@plus -1ex \@minus -2ex}%
-   {2.3ex \@plus 0.5ex \@minus 0.5ex}%
+   {-3.5ex \@plus -0.5ex \@minus 3.5ex}%
+   { 2.3ex \@plus  0.2ex \@minus 2.3ex}%
    {\normalfont\large\bfseries}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-   {-3.25ex\@plus -1ex \@minus -2ex}%
-   {1.5ex \@plus .5ex \@minus 0.5ex}%
-   {\normalfont\large\itshape}}
+   {-2ex   \@plus -0.5ex \@minus -2ex}%
+   { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
+   {\normalfont\large\itshape}
+}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-   {-3.25ex\@plus -1ex \@minus -2ex}%
-   {1.5ex \@plus .5ex \@minus 0.5ex}%
+   {-1.5ex \@plus -0.5ex \@minus -1.5ex}%
+   { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
    {\normalfont\slshape}}
 % END -- edit section headings 
 \long\def\@caption#1[#2]#3{%
@@ -455,7 +450,7 @@
 \setcounter{dal@readernum}{0}
 \def\reader#1{%
    \ifnum\value{dal@readernum}=5
-      \ClassWarningNoLine{dalthesis}%
+      \ClassWarningNoLine{ocethesis}%
          {Sorry, provisions have been made to allow only
           five readers}%
    \else
@@ -537,7 +532,7 @@
 \def\mec{\degreeprogram{Master of Electronic Commerce}\degreeinitial{M.E.C.}\degreesignatures{3}}
 \def\mhi{\degreeprogram{Master of Health Informatics}\degreeinitial{M.H.I.}\degreesignatures{3}}
 \def\masc{\degreeprogram{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
-\def\msc{\degreeprogram{Master of Science}\degreeinitial{MSc}\degreesignatures{3}}
+\def\msc{\degreeprogram{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
 \def\ma{\degreeprogram{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
 
 \def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{PhD}\dal@phdtrue\degreesignatures{5}}
@@ -557,7 +552,7 @@
 \def\defenceyear#1{\gdef\@defenceyear{#1}}
 \def\convocation#1#2{%
    \gdef\@convocationmonth{#1}\gdef\@convocationyear{#2}}
-\def\@convwarn{\ClassWarningNoLine{dalthesis}%
+\def\@convwarn{\ClassWarningNoLine{ocethesis}%
    {Convocation date may be incorrect}}
 \ifnum\month<5
    \def\@convocationmonth{May}
@@ -1027,7 +1022,7 @@
    {\vfil
     \advance \ab@page by \arabic{page}
     \ifnum\ab@page>0
-       \ClassWarningNoLine{dalthesis}%
+       \ClassWarningNoLine{ocethesis}%
           {Abstract longer than one page}
     \fi}
 \newcommand{\ackname}{Acknowledgements}
@@ -1039,7 +1034,7 @@
 \renewcommand{\contentsname}{Table of Contents}
 \def\frontmatter{%
    \typeout{Unavoidable over/underfulls may occur in the first^^J%
-            few pages of dalthesis. These can usually be ignored.^^J%
+            few pages of ocethesis. These can usually be ignored.^^J%
             However, if uncorrectable errors occur, notify staff.}
    \pagenumbering{roman}
    \pagestyle{plain}
@@ -1101,7 +1096,7 @@
    \fi
    }
 \def\mainmatter{\newpage
-        \typeout{Dalthesis preface pages completed.}
+        \typeout{Ocethesis preface pages completed.}
         \pagenumbering{arabic}
         \properpagestyle
         \dal@set@textheight{\dal@textheight@default}
@@ -1156,11 +1151,10 @@
 \def\nobib{\dal@print@bibfalse}
 \msc
 \properpagestyle
-\InputIfFileExists{dalthesis.cfg}
-   {\typeout{Local config file dalthesis.cfg used.}}{}
+\InputIfFileExists{ocethesis.cfg}
+   {\typeout{Local config file ocethesis.cfg used.}}{}
 \endinput
-
-\setlength{\parskip}{0.2ex plus 0.1ex minus 0.1ex}
+%\raggedbottom
 
 %%
 %% End of file `ocethesis.cls'.
