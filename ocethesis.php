@@ -1,4 +1,4 @@
-<?php $version="0.5";?>
+<?php $version="0.8";?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head><title>LaTeX style file for Oceanography theses</title>
@@ -6,8 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
 </head>
 <body>
+<p>[<a href="..">go up</a>]</p>
+
 <h1>LaTeX style file for Oceanography theses</h1>
-<p><i>Dan Kelley 2007-08-13</i></p>
+<p><i>Dan Kelley 2009-03-30</i></p>
 
 <h1>Background</h1> 
 
@@ -86,11 +88,31 @@ A)</tt> instead of <tt>(see appendix~\ref{appendix-name})</tt>
 
 <ul>
 
-<li>Version <span class="filename">0.5</span> is as <span
-class="filename">0.4</span> except that a conflict with the gensymb
-package has been resolved, and the dedication now works properly.
+<li>Version <span class="filename">0.8</span> (released 2010-01-04) is
+as <span class="filename">0.7</span> except for two changes that
+should decrease the likelihood of excessive whitespace.  The first
+change, in the <span class="filename">ocethesis.cls</span> file, is to
+alter the spacing before and after all section headings is adjusted,
+to decrease the incidence of excessive whitespace that can occur near
+unbreakable items.  The second, in the <span
+class="filename">mythesis.tex</span> document, is to use the
+<tt>\raggedbottom></tt> command, to move excessive space to the page bottom.
 
-<li>Version <span class="filename">0.4</span> is
+<li>Version <span class="filename">0.7</span> (released 2009-03-30) is
+as <span class="filename">0.6</span> except that M.Sc. and Ph.D. are
+now abbreviated MSc and PhD, and the flexibility of spacing before and
+after section headings is adjusted to reduce the chance of ugly
+whitespace in other parts of the document.
+
+<li>Version <span class="filename">0.6</span> (released 2008-09-02) is
+as <span class="filename">0.5</span> except that
+the Dedication and List of Symbols show up.
+
+<li>Version <span class="filename">0.5</span> (released 2008-07-16) is
+as <span class="filename">0.4</span> except that
+the <span class="filename">\examiner{}</span> works for MSc.
+
+<li>Version <span class="filename">0.4</span> (released 2008-02-18) is
 as <span class="filename">0.3</span> except that
 the <span class="filename">appendix</span> package is used to get
 correct cross-referencing.  Note that it seems that this must be
@@ -128,14 +150,10 @@ list of figures.  In LaTeX, the material for the list of figures is
 given in square brackets, prior to the curly-bracketed caption.  You
 can save yourself a lot of time by getting this right at the start.
 Note that the sentences that appear in the list of figures should be
-short and simple.  Some writers use non-sentences, e.g. they might
-write as follows
-<pre>
-\caption[Sampling array.]{Sampling array. Top panel: plan
-  view of sampling array, with instrument types as listed in the legend.
-  Bottom panel: diagram of an individual instrument.
-}
-</pre>
+short and simple.  (Some writers use non-sentences, e.g. they might
+write <tt>\caption[Sampling array.]{Sampling array.  Top panel: plan
+view of sampling array, with instrument types as listed in the legend.
+Bottom panel: diagram of an individual instrument.}</tt>
 
 </ul>
 
