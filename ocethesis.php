@@ -9,7 +9,7 @@
 <p>[<a href="..">go up</a>]</p>
 
 <h1>LaTeX style file for Oceanography theses</h1>
-<p><i>Dan Kelley 2009-03-30</i></p>
+<p><i>Dan Kelley 2010-01-04</i></p>
 
 <h1>Background</h1> 
 
