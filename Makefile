@@ -21,11 +21,11 @@ dist:
 	cp $(FILES) $(ZIP)
 	zip -r $(ZIP).zip $(ZIP)
 	rm -rf $(ZIP)
-	echo "Please do     cp $(ZIP).zip ../GCocean-web/ocethesis"
+	-echo "Please do     cp $(ZIP).zip ocethesis.php ../GCocean-web/ocethesis"
 
 clean:
 	-rm *.aux $(DOC).lot $(DOC).lof $(DOC).toc $(DOC).dvi $(DOC).blg $(DOC).bbl *.log $(DOC).out $(DOC).ist $(DOC).glo
 	-rm *~
 
-install:
-	scp ocethesis_*.zip ocethesis.php gcocean@graduatecoordinator.oceanography.dal.ca:public_www/ocethesis
+#install:
+#	scp ocethesis_*.zip ocethesis.php gcocean@graduatecoordinator.oceanography.dal.ca:public_www/ocethesis
