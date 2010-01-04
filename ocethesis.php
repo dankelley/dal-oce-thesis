@@ -1,15 +1,18 @@
+<!-- -*- mode: html; fill-column: 75; comment-column: 40; -*- -->
 <?php $version="0.8";?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-<head><title>LaTeX style file for Oceanography theses</title>
-<link rel="stylesheet" href="style.css" type="text/css">
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-</head>
-<body>
-<p>[<a href="..">go up</a>]</p>
+  <head><title>LaTeX style file for Oceanography theses</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+  </head>
+  <body>
+    <p>
+      [<a href="..">go up</a>]
+    </p>
 
-<h1>LaTeX style file for Oceanography theses</h1>
-<p><i>Dan Kelley 2010-01-04</i></p>
+<div class="title">LaTeX style file for Oceanography theses</div>
+<div class="author">Dan Kelley 2010-01-04</div>
 
 <h1>Background</h1> 
 
@@ -96,7 +99,7 @@ alter the spacing before and after all section headings is adjusted,
 to decrease the incidence of excessive whitespace that can occur near
 unbreakable items.  The second, in the <span
 class="filename">mythesis.tex</span> document, is to use the
-<tt>\raggedbottom></tt> command, to move excessive space to the page bottom.
+<tt>\raggedbottom</tt> command, to move excessive space to the page bottom.
 
 <li>Version <span class="filename">0.7</span> (released 2009-03-30) is
 as <span class="filename">0.6</span> except that M.Sc. and Ph.D. are
