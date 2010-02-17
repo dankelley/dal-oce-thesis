@@ -1,5 +1,5 @@
 <!-- -*- mode: html; fill-column: 75; comment-column: 40; -*- -->
-<?php $version="0.8";?>
+<?php $version="0.9";?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head><title>LaTeX style file for Oceanography theses</title>
@@ -12,7 +12,7 @@
     </p>
 
 <div class="title">LaTeX style file for Oceanography theses</div>
-<div class="author">Dan Kelley 2010-01-04</div>
+<div class="author">Dan Kelley 2010-02-17</div>
 
 <h1>Background</h1> 
 
@@ -90,6 +90,11 @@ A)</tt> instead of <tt>(see appendix~\ref{appendix-name})</tt>
 <h1>Changes from previous versions</h1>
 
 <ul>
+
+<li>Version <span class="filename">0.9</span> (released 2010-02-17) is
+as <span class="filename">0.8</span> except that the \texttt{\appendix}
+line is moved from the appendix file to the main file.  (Thanks to Eric O.,
+for this.)
 
 <li>Version <span class="filename">0.8</span> (released 2010-01-04) is
 as <span class="filename">0.7</span> except for two changes that
