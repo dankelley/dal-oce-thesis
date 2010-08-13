@@ -42,7 +42,8 @@ point. The whole purpose of this website is to facilitate this
 development.  The reader is cautioned, however, that changing LaTeX
 style sheets is *not* for the faint of heart.
 
-## Using the style file
+Using the style file
+--------------------
 
 Your first step should be to try to run the sample file named
 ``mythesis.tex`` on your machine. (If you don't know how to run a
