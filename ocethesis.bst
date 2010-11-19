@@ -1,3 +1,7 @@
+%% Reference on BST files ("taming the beast, by Nicolas Markey)
+%%   http://www.lsv.ens-cachan.fr/~markey/BibTeX/doc/ttb_en.pdf
+%%
+
 %%
 %% This is file `ocethesis.bst', based on 'agu.bst', 
 %% which is (c) 1994-1998 Patrick W Daly (see below)
