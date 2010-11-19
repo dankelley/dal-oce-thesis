@@ -822,7 +822,7 @@ FUNCTION {if.digit}
   swap$ duplicate$ "8" =
   swap$ "9" = or or or or or or or or or
 }
-FUNCTION {n.separate}
+FUNCTION {n.separate} % FIXME: should only do this if the first character is a digit
 { 't :=
   ""
   #0 'numnames :=
@@ -836,7 +836,10 @@ FUNCTION {n.separate}
     numnames #5 =
       { duplicate$ #1 #2 substring$ swap$
         #3 global.max$ substring$
-        "," swap$ * *
+        % BEGIN CHANGE (dek 2010-11-19)
+        % "," swap$ * *
+        "" swap$ * *
+        % END CHANGE (dek 2010-11-19)
       }
       'skip$
     if$
@@ -987,6 +990,7 @@ FUNCTION {format.journal.pages}
         { pop$ format.pages }
         {
           ", " *
+%          pages field.or.null *
           pages n.dashify *
         }
       if$
