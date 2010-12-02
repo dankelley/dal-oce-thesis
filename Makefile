@@ -2,10 +2,10 @@ LATEX=pdflatex
 #$(LATEX)=$(LATEX)
 DOC=mythesis
 all: FORCE
-	$(LATEX) $(DOC)
+	$(LATEX) -draftmode $(DOC)
 	bibtex $(DOC)
-	$(LATEX) $(DOC)
-	$(LATEX) $(DOC)
+	$(LATEX) -draftmode $(DOC)
+	$(LATEX) -draftmode $(DOC)
 	$(LATEX) $(DOC)
 FORCE:
 
