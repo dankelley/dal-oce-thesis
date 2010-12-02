@@ -910,11 +910,6 @@
        the request of individuals or institutions. I understand 
        that my thesis will be electronically available to the public.}
 
-      \vskip1.5in
-      \signature{}{{\small Signature of Author}}
-
-      \bigskip\bigskip
-
       \begin{sloppypar}
          \relax
          \hbadness=10000
@@ -922,7 +917,7 @@
          neither the thesis nor extensive extracts from it
          may be printed or otherwise reproduced without the
          author's written permission.
-         \medskip
+
 
          The author attests that permission has been obtained
          for the use of any copyrighted material appearing in
@@ -930,6 +925,12 @@
          proper acknowledgement in scholarly writing), and that
          all such use is clearly acknowledged.
       \end{sloppypar}
+
+      \vskip1.5in
+      \signature{}{{\small Signature of Author}}
+
+
+
    \end{dal@frontpage}
    }
    }

@@ -731,9 +731,6 @@
        purposes, at its discretion, the above title upon
        the request of individuals or institutions.}
 
-      \vskip1.5in
-      \signature{}{{\small Signature of Author}}
-
       \bigskip\bigskip
 
       \begin{sloppypar}
@@ -752,6 +749,10 @@
          proper acknowledgement in scholarly writing) and that
          all such use is clearly acknowledged.
       \end{sloppypar}
+
+      \vskip1.5in
+      \signature{}{{\small Signature of Author}}
+
    \end{dal@frontpage}
    }
    }
@@ -794,8 +795,6 @@
        purposes, at its discretion, the above thesis upon
        the request of individuals or institutions.}
 
-      \vskip1.5in
-      \signature{}{{\small Signature of Author}}
 
       \bigskip\bigskip
 
@@ -815,6 +814,11 @@
          proper acknowledgement in scholarly writing), and that
          all such use is clearly acknowledged.
       \end{sloppypar}
+
+      \vskip1.5in
+      \signature{}{{\small Signature of Author}}
+
+
    \end{dal@frontpage}
    }
    }
