@@ -907,7 +907,8 @@
        \no@breaks{\@university}
        to circulate and to have copied for non-commercial
        purposes, at its discretion, the above title upon
-       the request of individuals or institutions.}
+       the request of individuals or institutions. I understand 
+       that my thesis will be electronically available to the public.}
 
       \vskip1.5in
       \signature{}{{\small Signature of Author}}
@@ -926,7 +927,7 @@
          The author attests that permission has been obtained
          for the use of any copyrighted material appearing in
          the thesis (other than brief excerpts requiring only
-         proper acknowledgement in scholarly writing) and that
+         proper acknowledgement in scholarly writing), and that
          all such use is clearly acknowledged.
       \end{sloppypar}
    \end{dal@frontpage}
