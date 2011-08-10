@@ -975,6 +975,23 @@
        purposes, at its discretion, the above thesis upon
        the request of individuals or institutions.}
 
+      \begin{sloppypar}
+         \relax
+         \hbadness=10000
+         The author reserves other publication rights, and
+         neither the thesis nor extensive extracts from it
+         may be printed or otherwise reproduced without the
+         author's written permission.
+
+
+         The author attests that permission has been obtained
+         for the use of any copyrighted material appearing in
+         the thesis (other than brief excerpts requiring only
+         proper acknowledgement in scholarly writing), and that
+         all such use is clearly acknowledged.
+      \end{sloppypar}
+
+
       \vskip1.5in
       \signature{}{{\small Signature of Author}}
 
