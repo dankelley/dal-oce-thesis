@@ -734,47 +734,49 @@
    \dal@CheckForTwoSupervisors%
    \beginskip
    \ifdal@phd
-      \signature{External Examiner:}{\@examiner}
+   \signature{External Examiner:}{}%{\@examiner}
 
       \ifdal@two@supervisors
-         \signature{Research Supervisors:}{\@supervisor}
-         \signature{}{\@cosupervisor}
+      \signature{Research Supervisors:}{} %{\@supervisor}
+         \signature{}%{\@cosupervisor}
       \else
-         \signature{Research Supervisor:}{\@supervisor}
+      \signature{Research Supervisor:}{} %{\@supervisor}
       \fi
-      \signature{Examining Committee:}{\@firstreader}
+      \signature{Examining Committee:}{} %{\@firstreader}
    \else % not Ph.D. degree:
       \ifdal@have@examiner % Some departments use examiners
-          \signature{External Examiner:}{\@examiner}
+      \signature{External Examiner:}{} %{\@examiner}
       \fi
       \ifdal@two@supervisors
-         \signature{Supervisors:}{\@supervisor}
-         \signature{}{\@cosupervisor}
+      \signature{Supervisors:}{} %{\@supervisor}
+      \signature{}{} %{\@cosupervisor}
       \else
-         \signature{Supervisor:}{\@supervisor}
+      \signature{Supervisor:}{} %{\@supervisor}
       \fi
       \ifdal@second@reader
-         \signature{Readers:}{\@firstreader}
+      \signature{Readers:}{} %{\@firstreader}
       \else
-         \signature{Reader:}{\@firstreader}
+      \signature{Reader:}{} %{\@firstreader}
       \fi
    \fi
 
    \ifdal@second@reader
-      \signature{}{\@secondreader}
+   \signature{}{} %{\@secondreader}
    \fi
 
    \ifdal@third@reader
-      \signature{}{\@thirdreader}
+   \signature{}{} %{\@thirdreader}
    \fi
 
    \ifdal@fourth@reader
-      \signature{}{\@fourthreader}
+   \signature{}{} %{\@fourthreader}
    \fi
 
    \ifdal@fifth@reader
-      \signature{}{\@fifthreader}
+   \signature{}{} %{\@fifthreader}
    \fi
+
+   \signature{Departmental Representative:}{}
 
    % Print enough blank signature lines for the required degree.  There
    % is always a supervisor and first reader line, so we have to adjust
