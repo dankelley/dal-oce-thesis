@@ -282,7 +282,7 @@
 \def\@makechapterhead#1{%
   \vspace*{50\p@}%
   {\parindent \z@ \raggedright \normalfont
-    \hrule
+    %\hrule
 	\vspace{5pt}%
     \ifnum \c@secnumdepth >\m@ne
         \huge\scshape \@chapapp\space \thechapter
@@ -292,7 +292,7 @@
     \interlinepenalty\@M
     \Huge \bfseries\scshape #1\par
     \vspace{5pt}%
-    \hrule
+    %\hrule
     \nobreak
     \vskip 40\p@
   }}
