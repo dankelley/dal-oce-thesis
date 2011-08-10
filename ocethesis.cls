@@ -1098,7 +1098,11 @@
       \fi
    \fi
    \ifdal@contents@page
+      \setlength{\baselineskip}{1.0ex plus 0.5ex minus 0.2ex}
+      \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
       \tableofcontents
+      \setlength{\baselineskip}{4ex plus 0.5ex minus 0.2ex}
+      \setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
       \clearpage
    \else
       \addtocounter{page}{1}
