@@ -776,7 +776,9 @@
    \signature{}{} %{\@fifthreader}
    \fi
 
+   \ifdal@phd
    \signature{Departmental Representative:}{}
+   \fi
 
    % Print enough blank signature lines for the required degree.  There
    % is always a supervisor and first reader line, so we have to adjust
