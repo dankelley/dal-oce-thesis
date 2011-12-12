@@ -748,7 +748,7 @@
       \signature{External Examiner:}{} %{\@examiner}
       \fi
       \ifdal@two@supervisors
-      \signature{Supervisors:}{} %{\@supervisor}
+      \signature{Co-supervisors:}{} %{\@supervisor}
       \signature{}{} %{\@cosupervisor}
       \else
       \signature{Supervisor:}{} %{\@supervisor}
