@@ -208,6 +208,7 @@
       \addcontentsline{toc}{chapter}{#1}%
    \fi
    \chaptermark{#1}%
+   \addtocontents{toc}{\protect\addvspace{10\p@}}%
    \addtocontents{lof}{\protect\addvspace{10\p@}}%
    \addtocontents{lot}{\protect\addvspace{10\p@}}%
    \if@twocolumn
@@ -308,10 +309,15 @@
 
 % BEGIN -- edit section headings 
 \setcounter{secnumdepth}{4}
-\renewcommand\section{\@startsection{section}{1}{\z@}%
-   {-3.5ex \@plus -0.5ex \@minus 3.5ex}%
-   { 2.3ex \@plus  0.2ex \@minus 2.3ex}%
-   {\normalfont\large\bfseries}}
+\renewcommand\section{\addtocontents{toc}{\protect\addvspace{10\p@}}%
+   \@startsection {section}{1}{\z@}%
+   {-3.5ex \@plus -1ex \@minus -.2ex}%
+   {2.3ex \@plus.2ex}%
+   {\normalfont\bfseries\raggedright}}
+% \renewcommand\section{\@startsection{section}{1}{\z@}%
+%    {-3.5ex \@plus -0.5ex \@minus 3.5ex}%
+%    { 2.3ex \@plus  0.2ex \@minus 2.3ex}%
+%    {\normalfont\large\bfseries}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
    {-2ex   \@plus -0.5ex \@minus -2ex}%
    { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
@@ -1106,6 +1112,8 @@
       % \setlength{\baselineskip}{4ex plus 0.5ex minus 0.2ex}
       % \setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
       \clearpage
+      % to make multi-line section title in table of contents tighter
+      \addtocontents{toc}{\protect\baselineskip=0.7\protect\baselineskip}
    \else
       \addtocounter{page}{1}
    \fi
