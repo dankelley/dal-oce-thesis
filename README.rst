@@ -4,28 +4,27 @@ LaTeX style file for Oceanography theses
 
 **Dan Kelley**
 
-**2007-05-23, 2009-03-19, 2010-05-26**
+**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14**
 
 Background
 ----------
 
-Dalhousie's Faculty of Graduate Studies (FGS) places some fairly
-stringent demands on the formatting of theses.  Students who use
-GUI-based document preparation systems will be able to meet the
-demands without great intellectual effort.  Unfortunately, this is not
-the case for students who use LaTeX, because that system is not
-designed to let writers manipulate formats easily.  (Switching from
-LaTeX to a GUI-based system is not a sensible option for students
-whose theses contain significant mathematical notation.)
+Dalhousie's Faculty of Graduate Studies (FGS) places some fairly stringent
+demands on the formatting of theses.  Students who use GUI-based document
+preparation systems should be able to meet the demands without great
+intellectual effort.  Unfortunately, this is not the case for students who use
+LaTeX, which is not designed to let writers manipulate formats easily.  This
+poses a problem, because switching from LaTeX to a GUI-based system is not a
+sensible option for students whose theses contain significant mathematical
+notation.
 
-To ease the burden, Dalhousie students and faculty members (working
-without help or support from FGS) have developed a set of LaTeX style
-sheets. The present website provides one of these, ``ocethesis.cls``,
-which is based closely on the Department of Computer Science
-``dalcsthesis.cls`` style file.  (The latter is so well described at
+To ease the burden, Dalhousie students and faculty members (working without
+help or support from FGS) have developed a set of LaTeX style sheets. The
+present website provides one of these, ``ocethesis.cls``, which is based
+closely on the Department of Computer Science ``dalcsthesis.cls`` style file.
+(The latter is so well described at
 [http://users.cs.dal.ca/~vlado/dalcsthesis/](http://users.cs.dal.ca/~vlado/dalcsthesis/)
-that any sensible reader of the present document will follow the
-link.)
+that any sensible reader of the present document will follow the link.)
 
 Contents of this directory 
 --------------------------
@@ -35,12 +34,12 @@ This directory contains the Dalhousie Oceanography thesis LaTex style
 and ``ocethesisbib.sty``), a sample LaTeX file (``mythesis.tex``), and
 a sample bibliography file (``literature.bib``).
 
-It seems that the style sheet satisfies the FGS rules as of early
-2007. However, these rules are a moving target, so it seems certain
-that further changes to the style files will be required at some
-point. The whole purpose of this website is to facilitate this
-development.  The reader is cautioned, however, that changing LaTeX
-style sheets is *not* for the faint of heart.
+It seems that the style sheet satisfies the FGS rules most of the time.
+However, these rules are very much a moving target, so it seems certain that
+further changes to the style files will be required at some point. The whole
+purpose of this website is to facilitate this development.  The reader is
+cautioned, however, that changing LaTeX style sheets is *not* for the faint of
+heart.
 
 Using the style file
 --------------------
@@ -79,12 +78,16 @@ Known errors in this version
    *Hello* section of ``mythesis.tex``, fail on my (OS X system), but
    seem to work on PC systems.
 
-2. As of March 2009, FGS requested that entries in the table of
-   contents be in an upper-case font.  However, they relaxed this
-   requirement after I explained that I had worked for a morning
-   trying to do this, with no luck, and that our department had
-   submitted dozens of theses in the format provided by this package.
-   (In case they make the request again, a hint: the ``tocloft``
-   package should be able to handle this, but it seems not to, at
-   least in my trials.  There is an issue of where to put the
-   ``usepackage`` command, I think.)
+2. As of March 2009, FGS requested that entries in the table of contents be in
+   an upper-case font.  However, they relaxed this requirement after I
+   explained that I had worked for a morning trying to do this, with no luck,
+   and that our department had submitted dozens of theses in the format
+   provided by this package.  In 2011, they started demanding this again.
+   Whether the present-day style sheet produces acceptable results is very much
+   an open question, for the reason that *everything* relating to thesis
+   formatting at Dalhousie is an open question.  Not only do FGS staff make
+   different suggestions to different students, but the FGS website contains
+   documents that contradict each other.  The optimist sees a future in which
+   FGS imposes only reasonable demands on formatting.  This is the right thing
+   to do, and it will increase alumni donations.
+
