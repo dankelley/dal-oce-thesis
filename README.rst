@@ -4,7 +4,7 @@ LaTeX style file for Oceanography theses
 
 **Dan Kelley**
 
-**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14**
+**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14, 2012-04-04**
 
 Background
 ----------
@@ -90,4 +90,21 @@ Known errors in this version
    documents that contradict each other.  The optimist sees a future in which
    FGS imposes only reasonable demands on formatting.  This is the right thing
    to do, and it will increase alumni donations.
+
+History of recent changes
+-------------------------
+
+2012-04-04
+..........
+
+* Increase font size for section headings
+  
+* Make chapter and section headings single-spaced.
+
+* Use zero parindent on signature page.
+
+2011-12-14
+..........
+
+* Fix an appendix problem.
 

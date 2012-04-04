@@ -1,9 +1,13 @@
 %% Dalhousie University Oceanography Thesis Document Class
-%% 2010-01-04
+%% 2012-04-04
 %% by Dan Kelley.  (Really, this is just a small perturbation of
 %%  the file whose history is indicated in the following comments.)
 %%
 %% Dalhousie University Computer Science Thesis Document Class
+%%
+%% Version 2.11 and suceeding versions
+%% By Dan Kelley
+%% Changes from version 2.10: see README and other files on https://github.com/dankelley/dal-oce-thesis
 %%
 %% Version 2.10 <2010/01/04>
 %% By Dan Kelley
@@ -116,9 +120,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.9}
-\def\filedate{2008/08/13}
-\def\docdate{2008/08/13}
+\def\fileversion{2.10}
+\def\filedate{2012/04/04}
+\def\docdate{2012/04/04}
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -286,12 +290,15 @@
     %\hrule
 	\vspace{5pt}%
     \ifnum \c@secnumdepth >\m@ne
+
         \huge\scshape \@chapapp\space \thechapter
         \par\nobreak
         \vskip 20\p@
     \fi
     \interlinepenalty\@M
+    \linespread{1} % Set single-spacing
     \Huge \bfseries\scshape #1\par
+    \linespread{2} % Set single-spacing
     \vspace{5pt}%
     %\hrule
     \nobreak
@@ -310,10 +317,11 @@
 % BEGIN -- edit section headings 
 \setcounter{secnumdepth}{4}
 \renewcommand\section{\addtocontents{toc}{\protect\addvspace{10\p@}}%
-   \@startsection {section}{1}{\z@}%
+\@startsection {section}{1}{\z@}%
    {-3.5ex \@plus -1ex \@minus -.2ex}%
    {2.3ex \@plus.2ex}%
-   {\normalfont\large\bfseries\raggedright}}
+   {\linespread{1}\normalfont\large\bfseries\raggedright}%
+   }
 % \renewcommand\section{\@startsection{section}{1}{\z@}%
 %    {-3.5ex \@plus -0.5ex \@minus 3.5ex}%
 %    { 2.3ex \@plus  0.2ex \@minus 2.3ex}%
@@ -321,12 +329,12 @@
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
    {-2ex   \@plus -0.5ex \@minus -2ex}%
    { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
-   {\normalfont\large\itshape}
+   {\linespread{1}\normalfont\large\itshape}
 }
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
    {-1.5ex \@plus -0.5ex \@minus -1.5ex}%
    { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
-   {\normalfont\slshape}}
+   {\linespread{1}\normalfont\slshape}}
 % END -- edit section headings 
 \long\def\@caption#1[#2]#3{%
   \par
