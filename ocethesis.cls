@@ -313,7 +313,7 @@
    \@startsection {section}{1}{\z@}%
    {-3.5ex \@plus -1ex \@minus -.2ex}%
    {2.3ex \@plus.2ex}%
-   {\normalfont\bfseries\raggedright}}
+   {\normalfont\large\bfseries\raggedright}}
 % \renewcommand\section{\@startsection{section}{1}{\z@}%
 %    {-3.5ex \@plus -0.5ex \@minus 3.5ex}%
 %    { 2.3ex \@plus  0.2ex \@minus 2.3ex}%
