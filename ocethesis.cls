@@ -713,7 +713,7 @@
    \end{center}
    \vskip 0.25in plus 0.4in minus 0.1in
    \hyphenpenalty=10000
-   \setlength{\parindent}{36pt}
+   \setlength{\parindent}{0pt}
    \begin{sloppypar}
       \hbadness=10000
       The undersigned hereby certify that they have read and
