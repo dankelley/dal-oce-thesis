@@ -918,7 +918,8 @@
       YEAR:        {\@convocationyear} \\
       \bigskip
       \linespread{1}\normalsize
-      \setlength{\parindent}{36pt}
+      \setlength{\parindent}{1em}
+      \setlength{\parskip}{0.5em}
 
       \indent
       {Permission is herewith granted to

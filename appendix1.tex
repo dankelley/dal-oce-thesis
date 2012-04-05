@@ -2,28 +2,52 @@
 
 \begin{itemize}
 
+    \item Learn about running latex and bibtex -- how many times, and in what
+        order!  Or, if it is available for your operating system, try using
+        \texttt{latexmk}.
 
-	\item Learn about running latex and bibtex -- how many times, and in what order!
+    \item Examine the \texttt{.tex} files that created the present document, to
+        see how things are done.  It is convenient to use the \texttt{include}
+        syntax for chapters, so you can check formatting quickly, without
+        processing the entire thesis.
 
- \item Examine the .tex file to see how things are done. Note that it's convenient to use the ``include''
-syntax for chapters, so you can check formatting quickly, without processing the entire thesis.
+    \item Use \texttt{bibtex} for your literature citations.  It may seem
+        easier to simply enter your reference list in the text, but that is a
+        serious mistake, because it leads to errors, and it forces you to
+        reformat everything for particular journals.
 
-	\item It's a good idea to establish a convention for referencing items, e.g. perhaps ``e:...'' for
-equations, ``f:...'' for figures, ``t:...'' for tables, ``c:...'' for chapters.
+    \item Put \texttt{label} commands inside figure captions.  Otherwise
+        (sometimes) cross-referencing will be mixed up.
 
-	\item Be sure to put the ``label'' commands inside figure captions. Otherwise (sometimes) cross-referencing will be mixed up.
-	
-	\item Note the short-form figure caption, which appears in the list of figures.  (Do this work early because it's a pain later!)
-	
-	\item If you're finding weird cross-referencing results, clean out your .aux and similar files and start over.
+    \item Use \texttt{label} on any equations, figure, section, etc., that you
+        may need to refer to later.  This gives flexibility in adding and
+        removing material, and prevents errors.  Many people find it helpful to
+        establish a convention for referencing items, e.g. perhaps ``e:...''
+        for equations, ``f:...'' for figures, ``t:...'' for tables, ``c:...''
+        for chapters.
 
- 	\item Graphics can be tricky. Do some tests early on, so you'll learn whether your LaTeX setup
-    handles the graphs you make. 
+    \item Use \emph{short} entries in the square-bracket part of captions for
+        figures and tables.  This way, the table of contents will be in a form
+        that is more likely to be approved by the Faculty of Graduate Studies.
+        (Do this work at the start, because it is a pain to do this in your
+        last few days at the university.)
 
-  \item Be careful with quotation marks. In latex the \verb|"|-key
-    (i.e. the unidirected double quote character) produces double
-    right quotation marks, and should never be used. Double quotation
-    marks are produced by typing \verb|``| and \verb|''|. Most
-    latex-oriented text editors will do the substitution for you.
+    \item If you see unexpected cross-referencing results, delete your
+        \texttt{*.aux} (and possibly other files, such as \texttt{.blg}), and
+        try again.
+
+    \item Graphics can be tricky. Do some tests early on, so you'll learn
+        whether your LaTeX setup handles the graphs you make.  (For example, if
+        you use the \texttt{R} language, you will probably want to use
+        \texttt{pdf()} for line graphs and \texttt{png()} for image graphs.
+        For the latter, try e.g.  \texttt{png("file.png", width=7, height=7,
+        unit="in", res=300)}, which produces plots that have similar geometries
+        to the pdf default.)
+
+    \item Be careful with quotation marks. In latex the \verb|"|-key (i.e. the
+        unidirected double quote character) produces double right quotation
+        marks, and should never be used. Double quotation marks are produced by
+        typing \verb|``| and \verb|''|. Most latex-oriented text editors will
+        do the substitution for you.
 
 \end{itemize}
