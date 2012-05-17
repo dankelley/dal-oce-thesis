@@ -152,6 +152,12 @@
 \newif\ifdal@in@preface        \dal@in@prefacefalse
 \newif\ifdal@glossary          \dal@glossaryfalse
 \newcommand{\dal@ptsize}{12pt}
+
+% Kelley 2012-05-17 start
+\newcommand{\thetimestamp}{}
+\DeclareOption{timestamp}{\renewcommand{\thetimestamp}{\today}}
+% Kelley 2012-05-17 end
+
 \DeclareOption{10pt}{\renewcommand{\dal@ptsize}{10pt}}
 \DeclareOption{11pt}{\renewcommand{\dal@ptsize}{11pt}}
 \DeclareOption{12pt}{} % \dal@ptsize already set to 12pt
@@ -258,7 +264,7 @@
 \setlength{\marginparwidth}{40pt}
 \setlength{\marginparsep}{10pt}
 \newcommand{\properpagestyle}{%
-   \pagestyle{myheadings}\markboth{}{}\markright{}}
+   \pagestyle{myheadings}\markboth{\thetimestamp}{\thetimestamp}\markright{\thetimestamp}}
 \brokenpenalty=10000
 \linespread{1.37}\normalsize
 \renewenvironment{figure}
@@ -320,21 +326,24 @@
 \@startsection {section}{1}{\z@}%
    {-3.5ex \@plus -1ex \@minus -.2ex}%
    {2.3ex \@plus.2ex}%
-   {\linespread{1}\normalfont\large\bfseries\raggedright}%
-   }
+   {\linespread{1}\normalfont\Large\bfseries\raggedright}%
+}
 % \renewcommand\section{\@startsection{section}{1}{\z@}%
 %    {-3.5ex \@plus -0.5ex \@minus 3.5ex}%
 %    { 2.3ex \@plus  0.2ex \@minus 2.3ex}%
 %    {\normalfont\large\bfseries}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-   {-2ex   \@plus -0.5ex \@minus -2ex}%
-   { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
-   {\linespread{1}\normalfont\large\itshape}
+   {-3.0ex \@plus -0.5ex \@minus -2ex}%
+   { 1.5ex \@plus  0.2ex \@minus  1.2ex}%
+   %{\linespread{1}\normalfont\large\itshape}
+   {\linespread{1}\normalfont\large\bfseries}%
 }
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-   {-1.5ex \@plus -0.5ex \@minus -1.5ex}%
-   { 1.5ex \@plus  0.2ex \@minus  1.5ex}%
-   {\linespread{1}\normalfont\slshape}}
+   {-2.5ex \@plus -0.5ex \@minus -1.5ex}%
+   { 1.2ex \@plus  0.2ex \@minus  1.2ex}%
+   {\linespread{1}\normalfont\bfseries}%
+}
+%{\linespread{1}\normalfont\slshape}}
 % END -- edit section headings 
 \long\def\@caption#1[#2]#3{%
   \par
