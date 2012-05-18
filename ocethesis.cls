@@ -339,7 +339,7 @@
    {\linespread{1}\normalfont\large\bfseries}%
 }
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-   {-2.5ex \@plus -0.5ex \@minus -1.5ex}%
+   {-3.0ex \@plus -0.5ex \@minus -1.5ex}%
    { 1.2ex \@plus  0.2ex \@minus  1.2ex}%
    {\linespread{1}\normalfont\bfseries}%
 }
