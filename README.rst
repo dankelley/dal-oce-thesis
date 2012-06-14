@@ -91,6 +91,12 @@ Known errors in this version
    FGS imposes only reasonable demands on formatting.  This is the right thing
    to do, and it will increase alumni donations.
 
+Other resources
+---------------
+
+The Dalhousie Computing Science style sheet is available at
+http://web.cs.dal.ca/~vlado/dalcsthesis/
+
 History of recent changes
 -------------------------
 
