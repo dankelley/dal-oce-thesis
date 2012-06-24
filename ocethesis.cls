@@ -5,9 +5,11 @@
 %%
 %% Dalhousie University Computer Science Thesis Document Class
 %%
-%% Version 2.11 and suceeding versions
+%% Version 2.11 and higher:
 %% By Dan Kelley
-%% Changes from version 2.10: see README and other files on https://github.com/dankelley/dal-oce-thesis
+%% Changes from version 2.10: see README and other files on
+%%     https://github.com/dankelley/dal-oce-thesis
+%% for all version updates, bug reports, etc.
 %%
 %% Version 2.10 <2010/01/04>
 %% By Dan Kelley
@@ -120,9 +122,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.10}
-\def\filedate{2012/04/04}
-\def\docdate{2012/04/04}
+\def\fileversion{2.12}
+\def\filedate{2012/06/24}
+\def\docdate{2012/06/24}
 
 \NeedsTeXFormat{LaTeX2e}
 
