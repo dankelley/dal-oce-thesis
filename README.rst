@@ -96,6 +96,16 @@ http://web.cs.dal.ca/~vlado/dalcsthesis/
 History of recent changes
 -------------------------
 
+2012-07-10
+..........
+
+* Advise the use of title-case for section/chapter headings.
+
+* Alter the aesthetics of chapter pages slightly (with lines above and below
+the chapter number).
+
+
+
 2012-04-04
 ..........
 
