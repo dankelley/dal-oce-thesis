@@ -122,9 +122,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.12}
-\def\filedate{2012/06/24}
-\def\docdate{2012/06/24}
+\def\fileversion{2.13}
+\def\filedate{2012/07/10}
+\def\docdate{2012/07/10}
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -295,15 +295,18 @@
 \def\@makechapterhead#1{%
   \vspace*{50\p@}%
   {\parindent \z@ \raggedright \normalfont
-    %\hrule
-	\vspace{5pt}%
+  \hrule width 1.7in
+    \vspace{5pt}%
     \ifnum \c@secnumdepth >\m@ne
 
         \huge\scshape \@chapapp\space \thechapter
         \par\nobreak
-        \vskip 20\p@
+        \vskip 7\p@
     \fi
+    \hrule width 1.7in
+    \vspace{35pt}%
     \interlinepenalty\@M
+    \raggedright
     \linespread{1} % Set single-spacing
     \Huge \bfseries\scshape #1\par
     \linespread{2} % Set single-spacing
@@ -930,7 +933,7 @@
       \bigskip
       \linespread{1}\normalsize
       \setlength{\parindent}{0em}
-      \setlength{\parskip}{0.3em}
+      \setlength{\parskip}{1.5em}
 
       \indent
       {Permission is herewith granted to

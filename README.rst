@@ -4,7 +4,7 @@ LaTeX style file for Oceanography theses
 
 **Dan Kelley**
 
-**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14, 2012-04-04**
+**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14, 2012-04-04, 2012-07-10**
 
 Background
 ----------
@@ -83,13 +83,9 @@ Known errors in this version
    explained that I had worked for a morning trying to do this, with no luck,
    and that our department had submitted dozens of theses in the format
    provided by this package.  In 2011, they started demanding this again.
-   Whether the present-day style sheet produces acceptable results is very much
-   an open question, for the reason that *everything* relating to thesis
-   formatting at Dalhousie is an open question.  Not only do FGS staff make
-   different suggestions to different students, but the FGS website contains
-   documents that contradict each other.  The optimist sees a future in which
-   FGS imposes only reasonable demands on formatting.  This is the right thing
-   to do, and it will increase alumni donations.
+   I cannot see a good solution within latex, so users are advised to simply
+   write their headings in title-case format (e.g. write ``The Old Brown Cow``
+   instead of ``The old brown cow``).
 
 Other resources
 ---------------
