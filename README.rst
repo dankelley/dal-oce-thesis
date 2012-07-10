@@ -101,8 +101,7 @@ History of recent changes
 
 * Advise the use of title-case for section/chapter headings.
 
-* Alter the aesthetics of chapter pages slightly (with lines above and below
-the chapter number).
+* Alter the aesthetics of chapter pages slightly (with lines above and below the chapter number).
 
 
 
