@@ -77,6 +77,7 @@ worry about formatting.</p>
 
 <ul>
 
+<!--
 <li> Something is wrong with appendices. Cross-referencing seems not
 to work, and the appendices are not automatically entered into the
 table of contents. See the example file <span
@@ -84,6 +85,13 @@ class="filename">mythesis.tex</span> for a workaround for the table of
 contents. Unfortunately, there is not yet a solution for
 cross-referencing; you will have to write e.g. <tt>(see appendix
 A)</tt> instead of <tt>(see appendix~\ref{appendix-name})</tt>
+-->
+
+<li> If PhD examination committee has two supervisors and just two readers, it 
+will prove be necessary to alter the <span class="filename">ocethesis.cls</a> 
+file at line 466, changing <tt>\def\phd...\degreesignatures{5}</tt>
+to <tt>\def\phd...\degreesignatures{4}</tt>.
+
 
 </ul>
 
