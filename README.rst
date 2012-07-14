@@ -74,18 +74,22 @@ Notes
 Known errors in this version
 ----------------------------
 
-1. Cross-references to appendices, such as in the first line of the
-   *Hello* section of ``mythesis.tex``, fail on my (OS X system), but
-   seem to work on PC systems.
+
+1. If PhD examination committee has two supervisors and just two readers, it
+   will prove be necessary to alter the <span
+   class="filename">ocethesis.cls</a> file at line 466, changing
+   ``\def\phd...\degreesignatures{5}`` to ``\def\phd...\degreesignatures{4}``.
 
 2. As of March 2009, FGS requested that entries in the table of contents be in
-   an upper-case font.  However, they relaxed this requirement after I
-   explained that I had worked for a morning trying to do this, with no luck,
-   and that our department had submitted dozens of theses in the format
-   provided by this package.  In 2011, they started demanding this again.
-   I cannot see a good solution within latex, so users are advised to simply
-   write their headings in title-case format (e.g. write ``The Old Brown Cow``
-   instead of ``The old brown cow``).
+   a title-case font.  They relaxed this requirement for a while, but are
+   enforcing it again in 2011.  There is no obvious latex solution to this,
+   because it is tricky issue to decide which words are important, deserving of
+   upper case, and which are less important; "on" could refer to a bird on a
+   wire, or it could be the name of a person.  So, the solution lies with the
+   thesis author: a heading as ``The Old Brown Cow`` instead of ``The old brown
+   cow.``  The publishing industry is somewhat divided on whether title case is
+   to be used in books, and perhaps one day FGS will recognize that and let
+   authors decide.
 
 Other resources
 ---------------
