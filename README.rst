@@ -71,6 +71,15 @@ Notes
    Faculty of Graduate Studies.  This is to avoid problems that arise
    by slight displacements in different printers.
 
+2. To get rotated captions and tables, put ``\usepackage{lscape}`` in your .tex
+   file, and then put ``\begin{landscape}`` before content that is to go into
+   landscape mode, and ``\end{landscape}`` to return to normal mode.  (Thanks
+   to JH for this hint.)
+
+3. To get degree symbols with less typesetting, put ``\usepackage{textcomp}``
+   in your .tex file and then write e.g. ``10\textdegree{}`` instead of
+   ``10$^\circ$``.  (Thanks to JH for this hint.)
+
 Known errors in this version
 ----------------------------
 
