@@ -564,7 +564,7 @@
 \def\masc{\degreeprogram{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
 \def\msc{\degreeprogram{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
 \def\ma{\degreeprogram{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
-\def\bsc{\degreeprogram{Batchelor of of Science}\degreeinitial{B.Sc.}\degreesignatures{3}}
+\def\bsc{\degreeprogram{Bachelor of of Science}\degreeinitial{B.Sc.}\degreesignatures{3}}
 
 \def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{PhD}\dal@phdtrue\degreesignatures{5}}
 
