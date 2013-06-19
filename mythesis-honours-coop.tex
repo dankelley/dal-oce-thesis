@@ -1,0 +1,68 @@
+\documentclass[12pt,timestamp]{ocethesis}
+% Required packages
+\usepackage{ocethesisbib}       % For bibliography
+%\usepackage{appendix}           % Otherwise cross references may fail
+\usepackage{setspace}           % For single-spacing of abstract
+\usepackage{graphicx}
+% Highly recommended packages
+\usepackage{times}              % Improve font over the default
+% Recommended packages
+\usepackage{amsmath}            % Has more symbols
+\usepackage{color}              % In case you use coloured text
+\usepackage{longtable}          % Use this to get long tables
+\usepackage{rotating}           % Use this if you have rotated figures
+\usepackage{subfigure}          % Use this if you want sub-figures
+\usepackage{microtype}          % Subtly improves word spacing
+
+\parindent=1em                  % Set any value you like
+
+\raggedbottom                   % Prevents large inter-para spacing
+
+%% Below are some macros that could prove useful; uncomment any
+%% that might seem to be useful.
+%\newcommand{\fixme}[1]{\color{red}$<$#1$>$\color{black}}
+
+\begin{document}
+
+%\msc % or \phd
+\bsc
+\title{(Insert thesis title Here)}
+\author{(Insert author name here)}
+\supervisor{(Insert supervisor name here)}
+%\supervisor{(Insert co-supervisor name here)}
+%\examiner{(Insert external examiner's name here)} % comment out if there was no ext. examiner
+\firstreader{(Insert first reader's name here)}
+\secondreader{(Insert second reader's name here)}
+\thirdreader{(Insert third reader's name here)}
+\fourthreader{(Insert fourth reader's name here)}
+\university{Dalhousie University}
+\dept{Mathematics and Oceanography (Co-op)}
+
+\defenceday{1}
+\defencemonth{February}
+\defenceyear{2012}
+\convocation{May}{2012}
+
+\dedicate{(Insert dedication here)}
+
+\frontmatter
+
+\input{abstract}
+\input{symbols}
+%\printglossary
+\input{acknowledgment}
+
+\mainmatter
+
+\include{chapter1}
+% ...include other chapters here...
+
+% If there are no appendices, remove the \appendix line as well as the \include.
+\appendix
+\include{appendix1}
+% ...include other appendices here...
+
+\bibliographystyle{ocethesis}
+\bibliography{literature} % file called literature.bib in present directory
+
+\end{document}

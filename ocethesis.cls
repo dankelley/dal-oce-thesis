@@ -551,6 +551,8 @@
 \def\@dept{Faculty of Computer Science}
 \def\@faculty{Graduate Studies}
 
+\def\bcshonc{\gdef\@faculty{Computer Science}\degreeprogram{Bachelor of Computer Science, Honours}\degreeinitial{B.C.Sc.~(Honours)}\degreesignatures{2}}
+
 \def\bcshon{\gdef\@faculty{Computer Science}\degreeprogram{Bachelor of Computer Science, Honours}\degreeinitial{B.C.Sc.~(Honours)}\degreesignatures{2}}
 \def\bcshoncoop{\gdef\@faculty{Computer Science}\degreeprogram{Bachelor of Computer Science, Honours Co-op}\degreeinitial{B.C.Sc.~(Honours, Co-op)}\degreesignatures{2}}
 \def\bschon{\gdef\@faculty{Science}\degreeprogram{Bachelor of Science, Honours}\degreeinitial{B.Sc.~(Hon)}\degreesignatures{2}}
@@ -562,6 +564,7 @@
 \def\masc{\degreeprogram{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
 \def\msc{\degreeprogram{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
 \def\ma{\degreeprogram{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
+\def\bsc{\degreeprogram{Batchelor of of Science}\degreeinitial{B.Sc.}\degreesignatures{3}}
 
 \def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{PhD}\dal@phdtrue\degreesignatures{5}}
 
