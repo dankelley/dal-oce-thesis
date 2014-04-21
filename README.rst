@@ -4,7 +4,7 @@ LaTeX style file for Oceanography theses
 
 **Dan Kelley**
 
-**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14, 2012-04-04, 2012-07-10**
+**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14, 2012-04-04, 2012-07-10, 2014-04-21**
 
 Background
 ----------
@@ -18,58 +18,60 @@ poses a problem, because switching from LaTeX to a GUI-based system is not a
 sensible option for students whose theses contain significant mathematical
 notation.
 
-To ease the burden, Dalhousie students and faculty members (working without
-help or support from FGS) have developed a set of LaTeX style sheets. The
-present website provides one of these, ``ocethesis.cls``, which is based
-closely on the Department of Computer Science ``dalcsthesis.cls`` style file.
-(The latter is so well described at
+To ease the burden, Dalhousie students and faculty members have developed a set
+of LaTeX style sheets. The present website provides one of these,
+``ocethesis.cls``, which is based closely on the Department of Computer Science
+``dalcsthesis.cls`` style file.  (The latter is so well described at
 [http://users.cs.dal.ca/~vlado/dalcsthesis/](http://users.cs.dal.ca/~vlado/dalcsthesis/)
 that any sensible reader of the present document will follow the link.)
+
+The ``ocethesis.cls`` style sheet may also be used to prepare a BSc thesis, as
+exemplified in the ``mythesis-honours-coop.tex`` file provided here.
+
 
 Contents of this directory 
 --------------------------
 
 This directory contains the Dalhousie Oceanography thesis LaTex style
-(``ocethesis.cls``), two bibliography style files (``ocethesis.bst``
-and ``ocethesisbib.sty``), a sample LaTeX file (``mythesis.tex``), and
-a sample bibliography file (``literature.bib``).
+(``ocethesis.cls``), two bibliography style files (``ocethesis.bst`` and
+``ocethesisbib.sty``), a sample LaTeX file for postgraduate work
+(``mythesis.tex``) a sample LaTeX file for undergraduate work
+(``mythesis-honours-coop.tex``), and a sample bibliography file
+(``literature.bib``).
 
 It seems that the style sheet satisfies the FGS rules most of the time.
-However, these rules are very much a moving target, so it seems certain that
-further changes to the style files will be required at some point. The whole
-purpose of this website is to facilitate this development.  The reader is
-cautioned, however, that changing LaTeX style sheets is *not* for the faint of
-heart.
+However, these rules are a moving target, so it seems likely that further
+changes to the style files will be required at some point. The whole purpose of
+this website is to facilitate this development.  The reader is cautioned,
+however, that changing LaTeX style sheets is *not* for the faint of heart.
 
 Using the style file
 --------------------
 
-Your first step should be to try to run the sample file named
-``mythesis.tex`` on your machine. (If you don't know how to run a
-LaTeX file, you'll need to learn that from another source. Luckily,
-LaTeX is the *lingua franca* of mathematically-inclined technical
-writing, so many resources are available.)
+Your first step should be to try to run the sample file named ``mythesis.tex``
+on your machine. (If you don't know how to run a LaTeX file, you'll need to
+learn that from another source. Luckily, LaTeX is the *lingua franca* of
+mathematically-inclined technical writing, so many resources are available.)
 
-Note that this sample file uses a figure, in the file
-``figure1.pdf``. You'll need to find out how to work with whatever
-type of figures your software creates. Do that and test it with this
-sample file, before going on. This will be the biggest decision you'll
-have to make. The simplest scheme would be to chat with another
-student who uses similar software to make figures.
+Note that this sample file uses a figure, in the file ``figure1.pdf``. You'll
+need to find out how to work with whatever type of figures your software
+creates. Do that and test it with this sample file, before going on. This will
+be the biggest decision you'll have to make. The simplest scheme would be to
+chat with another student who uses similar software to make figures.
 
-Once you've got it working with figures, you should start changing
-some of the blocks in which definitions are given for the thesis
-title, etc. Then it will be time to start adding lines to include your
-various chapters and appendices. At that stage -- which should be
-within an hour of your first experiment -- you'll be working on your
-thesis, and you won't have to think about the format again!
+Once you've got it working with figures, you should start changing some of the
+blocks in which definitions are given for the thesis title, etc. Then it will
+be time to start adding lines to include your various chapters and appendices.
+At that stage -- which should be within an hour of your first experiment --
+you'll be working on your thesis, and you won't have to think about the format
+again!
 
 Notes
 -----
 
-1. The margins are 0.05 inches wider than the width specified by the
-   Faculty of Graduate Studies.  This is to avoid problems that arise
-   by slight displacements in different printers.
+1. The margins are 0.05 inches wider than the width specified by the Faculty of
+   Graduate Studies.  This is to avoid problems that arise by slight
+   displacements in different printers.
 
 2. To get rotated captions and tables, put ``\usepackage{lscape}`` in the .tex
    file, and then put ``\begin{landscape}`` before content that is to go into
