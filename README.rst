@@ -35,7 +35,7 @@ Contents of this directory
 This directory contains the Dalhousie Oceanography thesis LaTex style
 (``ocethesis.cls``), two bibliography style files (``ocethesis.bst`` and
 ``ocethesisbib.sty``), a sample LaTeX file for postgraduate work
-(``mythesis.tex``) a sample LaTeX file for undergraduate work
+(``mythesis.tex``), a sample LaTeX file for undergraduate work
 (``mythesis-honours-coop.tex``), and a sample bibliography file
 (``literature.bib``).
 
