@@ -132,7 +132,9 @@
    [\filedate\space v\fileversion\space
     Dalhousie University thesis class]
 \newif\ifdal@title@page        \dal@title@pagetrue
-\newif\ifdal@signature@page    \dal@signature@pagetrue
+% 2015-02-02: Dalhousie no longer uses a signature page
+%\newif\ifdal@signature@page    \dal@signature@pagetrue
+\newif\ifdal@signature@page    \dal@signature@pagefalse
 \newif\ifdal@first@signature   \dal@first@signaturetrue
 \newif\ifdal@permission@page   \dal@permission@pagetrue
 \newif\ifdal@contents@page     \dal@contents@pagetrue
@@ -1114,8 +1116,20 @@
          \dal@signaturepage
       \fi
    \else
-      \addtocounter{page}{1}
+      % 2015-02-02: do not bump page number since no sig page
+      %\addtocounter{page}{1}
    \fi
+
+   % 2015-02-02: put dedication before permission
+   \ifdal@dedication
+      \ifdal@dedication@page
+         \dedication@text
+         \clearpage
+      \else
+         \addtocounter{page}{1}
+      \fi
+   \fi
+
    \ifdal@permission@page
       \ifdal@fac@engineering
          \dal@eng@permissionpage
@@ -1125,14 +1139,7 @@
    \else
       \addtocounter{page}{1}
    \fi
-   \ifdal@dedication
-      \ifdal@dedication@page
-         \dedication@text
-         \clearpage
-      \else
-         \addtocounter{page}{1}
-      \fi
-   \fi
+
    \ifdal@contents@page
       % \setlength{\baselineskip}{1.0ex plus 0.5ex minus 0.2ex}
       % \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
