@@ -13,3 +13,4 @@ myth*pdf
 DS_Store
 
 *.toc
+.Rhistory

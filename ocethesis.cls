@@ -266,7 +266,9 @@
 \setlength{\marginparwidth}{40pt}
 \setlength{\marginparsep}{10pt}
 \newcommand{\properpagestyle}{%
-   \pagestyle{myheadings}\markboth{\thetimestamp}{\thetimestamp}\markright{\thetimestamp}}
+   \pagestyle{plain}}
+   %\pagestyle{myheadings}\markboth{\thetimestamp}{\thetimestamp}\markright{\thetimestamp}}
+
 \brokenpenalty=10000
 \linespread{1.37}\normalsize
 \renewenvironment{figure}
@@ -564,7 +566,7 @@
 \def\masc{\degreeprogram{Master of Applied Science}\degreeinitial{M.A.Sc.}\degreesignatures{3}}
 \def\msc{\degreeprogram{Master of Science}\degreeinitial{M.Sc.}\degreesignatures{3}}
 \def\ma{\degreeprogram{Master of Arts}\degreeinitial{M.A.}\degreesignatures{3}}
-\def\bsc{\degreeprogram{Bachelor of of Science}\degreeinitial{B.Sc.}\degreesignatures{3}}
+\def\bsc{\degreeprogram{Bachelor of Science}\degreeinitial{B.Sc.}\degreesignatures{3}}
 
 \def\phd{\degreeprogram{Doctor of Philosophy}\degreeinitial{PhD}\dal@phdtrue\degreesignatures{5}}
 
