@@ -136,7 +136,9 @@
 %\newif\ifdal@signature@page    \dal@signature@pagetrue
 \newif\ifdal@signature@page    \dal@signature@pagefalse
 \newif\ifdal@first@signature   \dal@first@signaturetrue
-\newif\ifdal@permission@page   \dal@permission@pagetrue
+% 2015-02-02: Dalhousie no longer uses a permission page
+%\newif\ifdal@permission@page   \dal@permission@pagetrue
+\newif\ifdal@permission@page   \dal@permission@pagefalse
 \newif\ifdal@contents@page     \dal@contents@pagetrue
 \newif\ifdal@tables@page       \dal@tables@pagetrue
 \newif\ifdal@figures@page      \dal@figures@pagetrue
