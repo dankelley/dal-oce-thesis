@@ -7,9 +7,14 @@ all: FORCE
 	$(LATEX) -draftmode $(DOC)
 	$(LATEX) -draftmode $(DOC)
 	$(LATEX) $(DOC)
+
+# next target is preferred, but not everyone has latexmk so it's not the deault
+allnew: 
+	latexmk -pdf -bibtex $(DOC)
+
 FORCE:
 
-VERSION=0.9
+VERSION=0.10
 LIB=ocethesis.cls ocethesis.bst ocethesisbib.sty Makefile README.txt README.pdf
 EXAMPLE=$(DOC).tex chapter1.tex appendix1.tex abstract.tex acknowledgment.tex literature.bib symbols.tex figure1.pdf figure1.ps
 FILES=$(LIB) $(EXAMPLE)

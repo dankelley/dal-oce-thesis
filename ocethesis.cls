@@ -1139,7 +1139,8 @@
          \dal@permissionpage
       \fi
    \else
-      \addtocounter{page}{1}
+      % 2015-03-28 permission pages don't seem to exist anymore
+      %\addtocounter{page}{1}
    \fi
 
    \ifdal@contents@page

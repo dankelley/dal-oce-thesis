@@ -2,9 +2,7 @@
 LaTeX style file for Oceanography theses
 ========================================
 
-**Dan Kelley**
-
-**2007-05-23, 2009-03-19, 2010-05-26, 2011-12-14, 2012-04-04, 2012-07-10, 2014-04-21**
+**Dan Kelley** (department of oceanography) and many others, over many years.
 
 Background
 ----------
@@ -89,13 +87,7 @@ Notes
 Known errors in this version
 ----------------------------
 
-
-1. If PhD examination committee has two supervisors and just two readers, it
-   will prove be necessary to alter the <span
-   class="filename">ocethesis.cls</a> file at line 466, changing
-   ``\def\phd...\degreesignatures{5}`` to ``\def\phd...\degreesignatures{4}``.
-
-2. As of March 2009, FGS requested that entries in the table of contents be in
+1. As of March 2009, FGS requested that entries in the table of contents be in
    a title-case font.  They relaxed this requirement for a while, but are
    enforcing it again in 2011.  There is no obvious latex solution to this,
    because it is tricky issue to decide which words are important, deserving of
@@ -106,6 +98,11 @@ Known errors in this version
    to be used in books, and perhaps one day FGS will recognize that and let
    authors decide.
 
+2. It seems that every student who uses this style sheet gets new demands from
+   FGS for aesthetic changes. Sometimes two students will use the style in a
+   given month, with FGS regarding the results in one case as flawless and the
+   other as erroneous. Whether to call the flaws "errors" is an open question.
+
 Other resources
 ---------------
 
@@ -114,6 +111,24 @@ http://web.cs.dal.ca/~vlado/dalcsthesis/
 
 History of recent changes
 -------------------------
+
+2015-03-28
+..........
+
+* Version 0.10 (I am going to try to remember to update this!)
+
+* Fix month-old problem with page numbering [issue 26]; the now-unused
+  signature page was still incrementing the roman-numeral page counter, so the
+  Table of Contents was numbered 1 unit too high.
+
+2015-02-02
+..........
+
+* version 0.9 (I have been forgetting to update this)
+* Remove signature page.
+* Move dedication to page ii.
+* Remove (draft) date from top of page.
+
 
 2012-07-10
 ..........
