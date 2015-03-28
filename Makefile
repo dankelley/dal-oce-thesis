@@ -31,6 +31,5 @@ dist:
 clean:
 	-rm *.aux $(DOC).lot $(DOC).lof $(DOC).toc $(DOC).dvi $(DOC).blg $(DOC).bbl *.log $(DOC).out $(DOC).ist $(DOC).glo
 	-rm *~
+	-rm *.latexmk
 
-#install:
-#	scp ocethesis_*.zip ocethesis.php gcocean@graduatecoordinator.oceanography.dal.ca:public_www/ocethesis
