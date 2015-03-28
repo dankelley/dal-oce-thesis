@@ -1149,17 +1149,18 @@
       %\addtocounter{page}{1}
    \fi
 
+   % TABLE OF CONTENTS
    \ifdal@contents@page
-      %\setlength{\baselineskip}{2.0ex plus 0.5ex minus 0.2ex}
-      % \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
-   \doublespacing
+      \setlength{\baselineskip}{3.0ex plus 0.5ex minus 0.2ex}
+      \setlength{\parskip}{1.5ex plus 0.5ex minus 0.2ex}
+      %\doublespacing
       \tableofcontents
-   \singlespacing
+      \singlespacing
       %\setlength{\baselineskip}{10ex plus 0.5ex minus 0.2ex}
       % \setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
       \clearpage
       % to make multi-line section title in table of contents tighter
-      \addtocontents{toc}{\protect\baselineskip=0.7\protect\baselineskip}
+      %\addtocontents{toc}{\protect\baselineskip=0.7\protect\baselineskip}
    \else
       \addtocounter{page}{1}
    \fi
