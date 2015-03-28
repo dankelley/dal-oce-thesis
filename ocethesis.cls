@@ -1,3 +1,9 @@
+%% The following notes from Kelley are confusing even to him. See the
+%% package website (http://dankelley.github.io/dal-oce-thesis/index.html) for 
+%% all documentation ... comments within this file are a bit of a jumble, 
+%% and some of them go back decades, by authors who have long since left
+%% Dalhousie University.
+%%
 %% Dalhousie University Oceanography Thesis Document Class
 %% 2012-04-04
 %% by Dan Kelley.  (Really, this is just a small perturbation of
@@ -122,9 +128,9 @@
 %% Please direct questions, comments, suggestions, etc.
 %% to: clyde@mathstat.dal.ca
 %% 
-\def\fileversion{2.13}
-\def\filedate{2012/07/10}
-\def\docdate{2012/07/10}
+\def\fileversion{2015.1}
+\def\filedate{2015/03/28}
+\def\docdate{2015/03/28}
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -1144,10 +1150,12 @@
    \fi
 
    \ifdal@contents@page
-      % \setlength{\baselineskip}{1.0ex plus 0.5ex minus 0.2ex}
+      %\setlength{\baselineskip}{2.0ex plus 0.5ex minus 0.2ex}
       % \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+   \doublespacing
       \tableofcontents
-      % \setlength{\baselineskip}{4ex plus 0.5ex minus 0.2ex}
+   \singlespacing
+      %\setlength{\baselineskip}{10ex plus 0.5ex minus 0.2ex}
       % \setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
       \clearpage
       % to make multi-line section title in table of contents tighter
@@ -1228,6 +1236,8 @@
    {\typeout{Local config file ocethesis.cfg used.}}{}
 \endinput
 %\raggedbottom
+
+\usepackage{tocloft}
 
 %%
 %% End of file `ocethesis.cls'.
