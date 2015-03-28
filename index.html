@@ -5,4 +5,109 @@ title: Overview
 submenu: home
 ---
 
-<p>FILL IN SOME CONTENT HERE</p>
+<h2>Author</h2>
+
+<p>Many people at Dalhousie have contributed to this latex style sheet. The
+version under discussion here is maintained by Dan Kelley (Department of
+    Oceanography). A version with similar ancestry is maintained by members of
+        Dalhousie's Faculty of Computing Science; for more, visit <a
+            href="Vlado Keselj's
+        website">http://web.cs.dal.ca/~vlado/dalcsthesis/</a>.</p>
+
+<h2>Background</h2>
+
+<p>Dalhousie's Faculty of Graduate Studies (FGS) places some fairly stringent
+demands on the formatting of theses.  Students who use GUI-based document
+preparation systems should be able to meet the demands without great
+intellectual effort.  Unfortunately, this is not the case for students who use
+LaTeX, which is not designed to let writers manipulate formats easily.  This
+poses a problem, because switching from LaTeX to a GUI-based system is not a
+sensible option for students whose theses contain significant mathematical
+notation.</p>
+
+<p>To ease the burden, Dalhousie students and faculty members have developed a
+set of LaTeX style sheets. The present website provides one of these,
+<code>ocethesis.cls</code>, and its associated bibtex style sheet,
+<code>ocethesis.bst</code>.</p>
+
+<p>Readers should note that these style sheets also support Honours theses; see
+the <code>mythesis-honours-coop.tex</code> file provided here.</p>
+
+
+<p>See the "Installation" link at the left for installing
+<code>dal-oce-thesis</code>.  You will find several files, of which the most
+important are: the Dalhousie Oceanography thesis LaTex style
+(<code>ocethesis.cls</code>), two bibliography style files
+(<code>ocethesis.bst</code> and <code>ocethesisbib.sty</code>), a sample LaTeX
+file for postgraduate work (<code>mythesis.tex</code>), a sample LaTeX file for
+undergraduate work (<code>mythesis-honours-coop.tex</code>), and a sample
+bibliography file (<code>literature.bib</code>).</p>
+
+<h2>Using the style file</h2>
+
+<p>Your first step should be to try to run the sample file named
+<code>mythesis.tex</code> on your machine. (If you don't know how to run a LaTeX
+file, you'll need to learn that from another source. Luckily, LaTeX is the
+lingua franca of mathematically-inclined technical writing, so many resources
+are available.)</p>
+
+<p>Note that this sample file uses a figure, in the file <code>figure1.pdf</code>.
+You'll need to find out how to work with whatever type of figures your software
+creates. Do that and test it with this sample file, before going on. This will
+be the biggest decision you'll have to make. The simplest scheme would be to
+chat with another student who uses similar software to make figures.</p>
+
+<p>Once you've got it working with figures, you should start changing some of the
+blocks in which definitions are given for the thesis title, etc. Then it will
+be time to start adding lines to include your various chapters and appendices.
+At that stage -- which should be within an hour of your first experiment --
+you'll be working on your thesis, and you won't have to think about the format
+again!</p>
+
+<h2>Notes</h2>
+
+<ol>
+
+    <li>The margins are 0.05 inches wider than the width specified by the
+    Faculty of Graduate Studies.  This is to avoid problems that arise by
+    slight displacements in different printers.
+
+   <li>To get rotated captions and tables, put <code>\usepackage{lscape}</code> in the
+   .tex file, and then put <code>\begin{landscape}</code> before content that is to go
+   into landscape mode, and <code>\end{landscape}</code> to return to normal mode.
+   (Thanks to John Foster for this hint.)
+
+   <li>To get degree symbols with less typesetting, put
+   <code>\usepackage{textcomp}</code> in your .tex file and then write e.g.
+   <code>10\textdegree{}</code> instead of <code>10$^\circ$</code>.  (Thanks to John Foster for
+   this hint.)
+
+   <li>The title of the bibliography may be changed by putting something like
+   <code>\renewcommand{\bibname}{References}</code> in the beginning of the .tex
+   file.  (Thanks to John Foster for this hint.)
+
+</ol>
+
+<h2>Known errors in this version</h2>
+
+<ol>
+
+    <li>As of March 2009, FGS requested that entries in the table of contents
+    be in a title-case font.  They relaxed this requirement for a while, but
+    are enforcing it again in 2011.  There is no obvious latex solution to
+    this, because it is tricky issue to decide which words are important,
+    deserving of upper case, and which are less important; "on" could refer to
+    a bird on a wire, or it could be the name of a person.  So, the solution
+    lies with the thesis author: a heading as ``The Old Brown Cow`` instead of
+    ``The old brown cow.``  The publishing industry is somewhat divided on
+    whether title case is to be used in books, and perhaps one day FGS will
+    recognize that and let authors decide.
+
+   <li>It seems that every student who uses this style sheet gets new demands
+   from FGS for aesthetic changes. Sometimes two students will use the style in
+   a given month, with FGS regarding the results in one case as flawless and
+   the other as erroneous. Whether to call the flaws "errors" is an open
+   question.
+
+</ol>
+
