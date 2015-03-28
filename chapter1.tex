@@ -1,5 +1,7 @@
-\chapter{\label{c:intro}Introduction: This Chapter Title is Very Long, so we
-Can See if it Ends up Single Spaced}
+\chapter[\label{c:intro}\protect\vspace{-1.3ex}Introduction: This Chapter Title
+is Very Long, so we Can See\\ if a fancy trick makes it
+single-spaced]{Introduction: This Chapter Title is Very Long, so we Can See if
+a fancy trick makes it single-spaced}
 
 \section{Welcome to my World}
 
@@ -30,10 +32,15 @@ laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 est laborum.
 
-\section{This is a Very Long Section Title, designed to Test Single Spacing in
-the Table of Contents.}
+
+%\addtocontents{toc}{\singlespacing}
+
+\section{This is a Very Long Section Title, designed to show that it is double
+space in table of contents unless the fancy trick is used}
 
 laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+
+%\addtocontents{toc}{\doublespacing}
 
 est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 est laborum.

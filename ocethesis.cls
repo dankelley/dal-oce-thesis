@@ -1157,10 +1157,10 @@
       \tableofcontents
       %\singlespacing
       %\setlength{\baselineskip}{10ex plus 0.5ex minus 0.2ex}
-      % \setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
+      %\setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
       \clearpage
       % to make multi-line section title in table of contents tighter
-      \addtocontents{toc}{\protect\baselineskip=1.0\protect\baselineskip}
+      %\addtocontents{toc}{\protect\baselineskip=1.0\protect\baselineskip}
    \else
       \addtocounter{page}{1}
    \fi
@@ -1238,7 +1238,13 @@
 \endinput
 %\raggedbottom
 
-\usepackage{tocloft}
+%\usepackage{setspace}
+
+%%20150328 % TOCLOFT (below) does nothing
+%%20150328 \usepackage{tocloft}
+%%20150328 \setlength\cftparskip{-2pt}
+%%20150328 \setlength\cftbeforesecskip{1pt}
+%%20150328 \setlength\cftaftertoctitleskip{2pt}
 
 %%
 %% End of file `ocethesis.cls'.
