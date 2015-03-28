@@ -86,27 +86,27 @@ set of LaTeX style sheets. The present website provides one of these,
 <code>ocethesis.bst</code>.</p>
 
 <p>Readers should note that these style sheets also support Honours theses; see
-the <tt>mythesis-honours-coop.tex</tt> file provided here.</p>
+the <code>mythesis-honours-coop.tex</code> file provided here.</p>
 
 
 <p>See the "Installation" link at the left for installing
-<tt>dal-oce-thesis</tt>.  You will find several files, of which the most
+<code>dal-oce-thesis</code>.  You will find several files, of which the most
 important are: the Dalhousie Oceanography thesis LaTex style
-(<tt>ocethesis.cls</tt>), two bibliography style files (<tt>ocethesis.bst</tt>
-and <tt>ocethesisbib.sty</tt>), a sample LaTeX file for postgraduate work
-(<tt>mythesis.tex</tt>), a sample LaTeX file for undergraduate work
-(<tt>mythesis-honours-coop.tex</tt>), and a sample bibliography file
-(<tt>literature.bib</tt>).</p>
+(<code>ocethesis.cls</code>), two bibliography style files (<code>ocethesis.bst</code>
+and <code>ocethesisbib.sty</code>), a sample LaTeX file for postgraduate work
+(<code>mythesis.tex</code>), a sample LaTeX file for undergraduate work
+(<code>mythesis-honours-coop.tex</code>), and a sample bibliography file
+(<code>literature.bib</code>).</p>
 
 <h2>Using the style file</h2>
 
 <p>Your first step should be to try to run the sample file named
-<tt>mythesis.tex</tt> on your machine. (If you don't know how to run a LaTeX
+<code>mythesis.tex</code> on your machine. (If you don't know how to run a LaTeX
 file, you'll need to learn that from another source. Luckily, LaTeX is the
 lingua franca of mathematically-inclined technical writing, so many resources
 are available.)</p>
 
-<p>Note that this sample file uses a figure, in the file <tt>figure1.pdf</tt>.
+<p>Note that this sample file uses a figure, in the file <code>figure1.pdf</code>.
 You'll need to find out how to work with whatever type of figures your software
 creates. Do that and test it with this sample file, before going on. This will
 be the biggest decision you'll have to make. The simplest scheme would be to
@@ -127,18 +127,18 @@ again!</p>
     Faculty of Graduate Studies.  This is to avoid problems that arise by
     slight displacements in different printers.
 
-   <li>To get rotated captions and tables, put <tt>\usepackage{lscape}</tt> in the
-   .tex file, and then put <tt>\begin{landscape}</tt> before content that is to go
-   into landscape mode, and <tt>\end{landscape}</tt> to return to normal mode.
+   <li>To get rotated captions and tables, put <code>\usepackage{lscape}</code> in the
+   .tex file, and then put <code>\begin{landscape}</code> before content that is to go
+   into landscape mode, and <code>\end{landscape}</code> to return to normal mode.
    (Thanks to John Foster for this hint.)
 
    <li>To get degree symbols with less typesetting, put
-   <tt>\usepackage{textcomp}</tt> in your .tex file and then write e.g.
-   <tt>10\textdegree{}</tt> instead of <tt>10$^\circ$</tt>.  (Thanks to John Foster for
+   <code>\usepackage{textcomp}</code> in your .tex file and then write e.g.
+   <code>10\textdegree{}</code> instead of <code>10$^\circ$</code>.  (Thanks to John Foster for
    this hint.)
 
    <li>The title of the bibliography may be changed by putting something like
-   <tt>\renewcommand{\bibname}{References}</tt> in the beginning of the .tex
+   <code>\renewcommand{\bibname}{References}</code> in the beginning of the .tex
    file.  (Thanks to John Foster for this hint.)
 
 </ol>
