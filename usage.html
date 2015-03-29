@@ -43,20 +43,16 @@ href="http://dankelley.github.io/dal-oce-thesis/bugs.html">Bugs</a> link.</p>
    .tex file.  (Thanks to John Foster for this hint.)
 
    <li>Long chapter or section headings can cover more than a single line in
-   the table of contents. FGS will complain about this, stating that these
-   lines should be single spaced and not double-spaced like the rest of the
-   TOC. A web search reveals that other universities share this preference,
-   and that some writers have had success with 
-   the <code>tocloft</code> package,
-   but this does not work with the present style sheet
-   (or with sheets used at other universities). A solution that
-   works for titles that span exactly two lines is to hand-code a line position
-   shift. This is illustrated in the <code>mythesis.tex</code>sample file, for
-   the heading of chapter 1. To do this, first typeset normally, and note
-   where the line break occurs
-   in the TOC, and then to insert a line-break sequence at that spot,
-   within a square-bracket portion of the chapter command. Below is how
-   this is done in the <code>chapter1.tex</code> example file):
+   the table of contents. This is a problem because FGS requires such
+   lines should be single spaced, not double-spaced like the rest of the 
+   TOC. Many universities have this rule, and for some setups, a solution
+   is to use the <code>tocloft</code> package. However, this package
+   does not interact well with the present style sheet
+   (or with sheets used at other universities). However, there is
+   a good solution 
+   for titles that span exactly two lines.
+   This is illustrated in the <code>chapter1.tex</code>sample file, in
+   the lines that look like the following.
 <pre>
 \chapter[\label{c:intro}\protect\vspace{-1.3ex}
 Introduction: This Chapter Title is Very Long, so we Can See\\
@@ -64,6 +60,9 @@ if a fancy trick makes it single spaced]
 {Introduction: This Chapter Title is Very Long, so we Can See
 if a fancy trick makes it single spaced}
 </pre>
+   Place the hard hard break at the spot that latex normally breaks
+   the line in the TOC. It may be necessary to alter the vertical space
+   if your lines contain subscripts or superscripts.
 
 </ol>
 
