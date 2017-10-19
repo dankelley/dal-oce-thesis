@@ -48,7 +48,7 @@ to repeat these steps for any later updates to the Dalhousie thesis style sheet.
 
 The next step is to clone the dal-oce-thesis repository. In the terminal, type
 ```
-cd ~/tex/latex
+cd ~/texmf/tex/latex
 git clone https://github.com/dankelley/dal-oce-thesis.git ocethesis
 ```
 on Linux, or 
