@@ -16,7 +16,7 @@ depends on the operating system, and so some steps listed below are divided
 into Linux and MacOS (formerly OSX) variants; a procedure on Windows may be
 added if a user explains it to the developers.
 
-### One-time steps
+### Step 1: set up directories
 
 Open a terminal and type
 ```
@@ -30,45 +30,59 @@ your user account on your computer. On MacOS (or the previous OSX) this will be
 necessary subdirectories) does not exist. In this case use the terminal and
 create the requisite subdirectories, with
 ```
-mkdir -p ~/texmf/tex/latex mkdir -p ~/texmf/bibtex/bst
+mkdir -p ~/texmf/tex/latex
+mkdir -p ~/texmf/bibtex/bst
 ```
 on Linux or
 ```
-mkdir -p ~/Library/texmf/tex/latex mkdir -p ~/Library/texmf/bibtex/bst
+mkdir -p ~/Library/texmf/tex/latex
+mkdir -p ~/Library/texmf/bibtex/bst
 ```
 on MacOS.
+
+
+### Step 2: clone the Dalhousie thesis repository
 
 At this stage, you are set up for doing work with Latex, and you will not need
 to repeat these steps for any later updates to the Dalhousie thesis style sheet.
 
 The next step is to clone the dal-oce-thesis repository. In the terminal, type
 ```
-cd ~/tex/
+cd ~/tex/latex
+git clone https://github.com/dankelley/dal-oce-thesis.git ocethesis
 ```
 on Linux, or 
 ```
-cd ~/Library/tex/
+cd ~/Library/texmf/tex/latex
+git clone https://github.com/dankelley/dal-oce-thesis.git ocethesis
 ```
-on MacOS. Then type
-```
-git clone https://github.com/dankelley/dal-oce-thesis.git ~/texmf/tex/latex/ocethesis
-```
-Finally, change into the directory for bibliography style sheets, by typing
+on MacOS.
+
+Finally, set up the bibliography style sheet, with
 ```
 cd ~/texmf/bibtex/bst
+ln -s ../../tex/latex/ocethesis/ocethesis.bst .
 ```
 on Linux or
 ```
 cd ~/Library/texmf/bibtex/bst
-```
-on MacOS, and then type
-```
 ln -s ../../tex/latex/ocethesis/ocethesis.bst .
 ```
-to create a link to ``ocethesis.bst``.
+on MacOS.
 
 
-### Updating the installation
+### Step 3. testing the setup
+
+You can test if your TeX distribution is able to find the class file and style
+sheets by typing in the terminal:
+```
+kpsewhich ocethesis.cls
+kpsewhich ocethesis.bst
+```
+and verifying that both commands report the full path to the respective files,
+as you've set them up.
+
+## Updating the installation
 
 If `dal-oce-thesis` gets updated, you may update your installation by doing
 ```
@@ -84,13 +98,3 @@ git pull
 ```
 
 
-### Checking the installation
-
-You can test if your TeX distribution is able to find the class file and style
-sheets by typing in the terminal:
-```
-kpsewhich ocethesis.cls
-kpsewhich ocethesis.bst
-```
-and verifying that both commands report the full path to the respective files,
-as you've set them up.
