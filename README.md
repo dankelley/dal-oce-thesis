@@ -86,11 +86,11 @@ as you've set them up.
 
 If `dal-oce-thesis` gets updated, you may update your installation by doing
 ```
-cd ~/tex/
+cd ~/texmf/tex/latex/ocethesis
 ```
 on Linux or
 ```
-cd ~/Library/tex/
+cd ~/Library/texmf/tex/latex/ocethesis
 ```
 on MacOS, and then typing
 ```
