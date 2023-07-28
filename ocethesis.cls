@@ -163,6 +163,7 @@
 \newif\ifdal@fac@engineering   \dal@fac@engineeringfalse
 \newif\ifdal@in@preface        \dal@in@prefacefalse
 \newif\ifdal@glossary          \dal@glossaryfalse
+\newif\ifdal@landuse           \dal@landusefalse
 \newcommand{\dal@ptsize}{12pt}
 
 % Kelley 2012-05-17 start
@@ -176,6 +177,7 @@
 \DeclareOption{draft}{\AtEndOfClass{\draft}
    \PassOptionsToClass{draft}{report}}
 \DeclareOption{glossary}{\dal@glossarytrue}
+\DeclareOption{landuse}{\dal@landusetrue}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessOptions
 \LoadClass[\dal@ptsize]{report}
@@ -672,6 +674,15 @@
       \linespread{1.37}
    \end{center}
    \vskip0.75in
+   \ifdal@landuse
+      \linespread{1}\normalsize % Switch to single-spacing
+   \begin{center}
+   Dalhousie University is located in Mi’kma’ki, the\\
+ancestral and unceded territory of the Mi’kmaq.\\
+We are all Treaty people.
+   \end{center}
+   \vskip0.75in
+   \fi
    \begin{center}
       \rmfamily \copyright\ Copyright by \@author, \@defenceyear
    \end{center}
