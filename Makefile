@@ -12,7 +12,12 @@ all: FORCE
 allnew: 
 	latexmk -pdf -bibtex $(DOC)
 
+using_R:
+	R -e 'Sweave("mythesis_using_R.Rnw", encoding="utf-8")'
+	latexmk -pdf -bibtex mythesis_using_R
+
 FORCE:
+
 
 VERSION=0.10
 LIB=ocethesis.cls ocethesis.bst ocethesisbib.sty Makefile README.txt README.pdf
